@@ -6,9 +6,9 @@ This is FHIR Implementation Guide for Xt-EHR project, created to assist work wit
 </figure>
 
 
+<br/><br/><br/><br/><br/><br/>
 
-
-### Specification
+### Metadata overview
 ...
 <figure>
   {% include metadata.svg %}
