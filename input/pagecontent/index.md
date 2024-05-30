@@ -1,5 +1,12 @@
-### Introduction
+### Setup
 This is FHIR Implementation Guide for Xt-EHR project, created to assist work with ...
+
+<figure>
+  {% include ig_setup.svg %}
+</figure>
+
+
+
 
 ### Specification
 ...
