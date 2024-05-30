@@ -1,0 +1,96 @@
+@startuml
+'skinparam linetype ortho
+skinparam linetype polyline
+hide circle
+hide stereotype
+
+'!pragma layout smetana
+
+skinparam class<<MD>> {
+ BorderColor DarkSlateGray
+ BackgroundColor WhiteSmoke
+ HeaderBackgroundColor #909090
+}
+
+skinparam class<<TM>> {
+ BorderColor #505090
+ BackgroundColor AliceBlue
+ HeaderBackgroundColor SkyBlue
+}
+
+
+skinparam class<<TM+>> {
+ BorderColor #303070  
+ BackgroundColor AliceBlue
+ HeaderBackgroundColor Turquoise 
+}
+
+
+
+     class "**Xt-EHR-Terminologies**" as T<<TM>> {
+         Approved terminology content
+         to be used in all IGs 
+         --
+    }
+
+    class "**Foundation**" as Base<<TM+>> {
+        Metadata, common processes
+    }
+
+
+    class "**Commons**" as CE<<TM>> {
+        Common content to 
+be used across IGs
+    }
+
+
+    class "**Empty**" as E<<TM>> {
+        Empty template for 
+creating repositories
+    }
+
+
+    class "**(Any) ImplementationGuide**" as IG<<TM>> {
+    }
+
+
+
+    ' class "**PublicationRepo**" as Pub<<MD>> {
+    '   Webroot content repository
+    '   for published releases (html)
+    '   --
+    ' }
+
+
+' We con't want IGs to define on StarterKit
+' Common contains instances of SGPersona
+
+
+
+T  .d[hidden].> CE
+E  .r.> CE: "   Cloned into         "
+'E  .u.> T: "   Cloned into         "
+
+
+
+'E  .r.> IG: "Cloned into"
+'E .r.> Base: "Cloned into"
+CE --> Base: "dependsOn"
+IG --> Base: "dependsOn"
+IG -u-> T: "dependsOn"
+'IG .r.> Pub : "                "
+T -d[hidden]-> IG : "           "
+CE <-r- IG : " dependsOn     "
+
+
+
+
+
+'C -u-> Core 
+
+
+'IG  <.. CE: "   Cloned into         "
+
+
+
+@enduml
