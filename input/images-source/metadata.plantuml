@@ -1,0 +1,72 @@
+@startuml
+'skinparam linetype ortho
+skinparam linetype polyline
+hide circle
+hide stereotype
+
+'!pragma layout smetana
+
+skinparam class<<MD>> {
+ BorderColor DarkSlateGray
+ BackgroundColor WhiteSmoke
+ HeaderBackgroundColor #909090
+}
+
+skinparam class<<TM>> {
+ BorderColor #505090
+ BackgroundColor APPLICATION
+ HeaderBackgroundColor #8bd
+}
+
+
+    class "**Logical Model**" as LM<<TM>> {
+        |_ identifier[SG] 1..*   
+        |_ status 1..1
+        |_ title 1..1
+        |_ owner 1..1
+        |_ name 1..1
+    }
+
+
+class "**Element**" as EL<<TM>> {
+      |_ short 1..1
+      |_ definition 1..1
+      |_ type 1..1
+      |_ binding 0..1
+      |_ comment 0..1
+      |_ constraint 0..1
+      |_ mapping 0..*
+        |_ target 1..1
+        |_ relationship 0..1    
+      }
+
+
+class "**ValueSet**" as VS<<TM>> {
+    |_ identifier 1..*   
+    |_ url 0..*   
+    |_ status 1..1
+    |_ name 1..1
+    |_ title 1..1
+    |_ description 1..1   
+}
+
+
+
+class "**Profile**" as PR<<MD>> {
+    |_ identifier 1..*   
+    |_ url 0..*   
+    |_ status 1..1
+    |_ name 1..1
+    |_ title 1..1
+    |_ description 1..1   
+    |_ element 1..*
+      |_ ...
+}
+
+
+LM -r- EL:  "            "  
+EL-r- VS: "             "
+
+LM-d- PR: "      "
+
+@enduml
