@@ -26,21 +26,21 @@ skinparam class<<TM+>> {
 }
 
 
-
-     class "**Xt-EHR-Terminologies**" as T<<TM>> {
-         Approved terminology content
-         to be used in all IGs 
-         --
-    }
-
     class "**Foundation**" as Base<<TM+>> {
         Metadata, common processes
+        --
+        Serves as a "guidance" and checklist
     }
 
 
     class "**Commons**" as CE<<TM>> {
         Common content to 
-be used across IGs
+ be used across IGs
+--
+   Common models
+   Common definitions
+   Common terminologies
+   Common profiles
     }
 
 
@@ -51,6 +51,9 @@ creating repositories
 
 
     class "**(Any) ImplementationGuide**" as IG<<TM>> {
+    For example:
+    Prescription
+    Lab
     }
 
 
