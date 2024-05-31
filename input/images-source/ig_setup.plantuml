@@ -82,7 +82,7 @@ CE --> Base: "dependsOn"
 IG --> Base: "dependsOn"
 IG -u-> T: "dependsOn"
 'IG .r.> Pub : "                "
-T -d[hidden]-> IG : "           "
+'T -d[hidden]-> IG : "           "
 CE <-r- IG : " dependsOn     "
 
 
