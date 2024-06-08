@@ -41,6 +41,8 @@ publisher:
 pages:
   index.md:
     title: Home
+  metadata_model.md:
+    title: Metadata Model
 
 #    title: Recommendations
 #

@@ -8,8 +8,14 @@ hide stereotype
 
 skinparam class<<MD>> {
  BorderColor DarkSlateGray
- BackgroundColor WhiteSmoke
- HeaderBackgroundColor #909090
+ BackgroundColor TECHNOLOGY
+ HeaderBackgroundColor #7b8
+}
+
+skinparam class<<BU>> {
+ BorderColor #909050
+ BackgroundColor BUSINESS
+ HeaderBackgroundColor #dd4
 }
 
 skinparam class<<TM>> {
@@ -19,52 +25,90 @@ skinparam class<<TM>> {
 }
 
 
-    class "**Logical Model**" as LM<<TM>> {
-        |_ identifier[SG] 1..*   
-        |_ status 1..1
-        |_ title 1..1
-        |_ owner 1..1
-        |_ name 1..1
-    }
+class "**Glossary**" as G<<BU>> {
+  --
+  |_ title 1..1
+  |_ notes 1..1   
+  |_ date 1..1
+  |_ scope 1..1
+  |_ owner 1..1
+  |_ concept 1..*   
+  --
+}
+
+
+class "**Concept**" as C<<BU>> {
+  --
+  |_ designation 1..1
+  |_ status 1..1
+  |_ owner 1..1
+  |_ code 1..1
+  |_ mapping 1..1
+    |_ system 0..1
+    |_ code 0..1
+    |_ mapping_type 0..1   
+  |_ source 0..1    
+  --
+}
+
+
+class "**Data Model**" as LM<<TM>> {
+  --
+  |_ identifier 1..*   
+  |_ status 1..1
+  |_ title 1..1
+  |_ owner 1..1
+  |_ name 1..1
+  --
+}
 
 
 class "**Element**" as EL<<TM>> {
-      |_ short 1..1
-      |_ definition 1..1
-      |_ type 1..1
-      |_ binding 0..1
-      |_ comment 0..1
-      |_ constraint 0..1
-      |_ mapping 0..*
-        |_ target 1..1
-        |_ relationship 0..1    
-      }
+  --
+  |_ short 1..1
+  |_ definition 1..1
+  |_ type 1..1
+  |_ binding 0..1
+  |_ comment 0..1
+  |_ constraint 0..1
+  |_ mapping 0..*
+  |_ target 1..1
+  |_ relationship 0..1    
+  --
+}
 
 
 class "**ValueSet**" as VS<<TM>> {
-    |_ identifier 1..*   
-    |_ url 0..*   
-    |_ status 1..1
-    |_ name 1..1
-    |_ title 1..1
-    |_ description 1..1   
+  --
+  |_ identifier 1..*   
+  |_ url 0..*   
+  |_ status 1..1
+  |_ name 1..1
+  |_ title 1..1
+  |_ description 1..1   
+  --
 }
 
 
 
 class "**Profile**" as PR<<MD>> {
-    |_ identifier 1..*   
-    |_ url 0..*   
-    |_ status 1..1
-    |_ name 1..1
-    |_ title 1..1
-    |_ description 1..1   
-    |_ element 1..*
-      |_ ...
+  --
+  |_ identifier 1..*   
+  |_ url 0..*   
+  |_ status 1..1
+  |_ name 1..1
+  |_ title 1..1
+  |_ description 1..1   
+  |_ element 1..*
+    |_ ...
+  --
 }
 
 
+G -r- C:  "            "  
+
 LM -r- EL:  "            "  
+C -d- EL:  "            "  
 EL-r- VS: "             "
 
 LM-d- PR: "      "
