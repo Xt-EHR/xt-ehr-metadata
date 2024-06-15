@@ -10,7 +10,7 @@ Canonical / permanent URL:
 ### Issues
 Issues and change requests are managed here:  
 
-Issues list:__https://github.com/orgs/Xt-EHR/projects/1/views/1__  
+Issues list:__https://github.com/orgs/Xt-EHR/xt-ehr-metadata/issues__  
 Issues board:  __https://github.com/orgs/Xt-EHR/projects/1/views/1__  
 
 ---
