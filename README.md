@@ -1,4 +1,4 @@
-# Xt-EHR FHIR Implementation Guide - Metadata Foundation
+# Xt-EHR - Metadata Foundation
 <br> </br>
 ### Publication
 This ImplementationGuide is published in the following locations:
