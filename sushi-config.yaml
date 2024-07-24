@@ -38,11 +38,8 @@ publisher:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-pages:
-  index.md:
-    title: Home
-  metadata_model.md:
-    title: Metadata Model
+
+
 
 #    title: Recommendations
 #
@@ -56,7 +53,7 @@ pages:
 #
 parameters:
   produce-jekyll-data: true
-  special-url:
+#  special-url:
 
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
@@ -71,11 +68,15 @@ parameters:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Functional: 
-    Functional2: index.html
-  Technical: 
-    Terminology: index.html
-  Usage: artifacts.html
+  Framework: 
+    Setup: index.html
+    Process: process.html
+  Semantics: 
+    Glossary: glossary.html
+    Logical models: modelling.html
+    FHIR profiling: profiling.html
+    Terminology: terminology.html
+  Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

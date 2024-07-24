@@ -1,0 +1,1 @@
+Glossary to define data elements used in different profiles.
