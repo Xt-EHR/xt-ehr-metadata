@@ -71,6 +71,7 @@ menu:
   Framework: 
     Setup: index.html
     Process: process.html
+    Versioning: versioning.html
   Semantics: 
     Glossary: glossary.html
     Logical models: modelling.html
