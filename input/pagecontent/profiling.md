@@ -1,1 +1,12 @@
-FHIR profiling principles, incl naming of profiles and extensions.
+### FHIR profiles
+...
+
+### Related FHIR specifications
+...
+
+### Naming and authoring conventions
+...
+
+### Terminology bindings
+...
+
