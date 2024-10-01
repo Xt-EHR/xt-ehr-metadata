@@ -1,4 +1,5 @@
 @startuml
+
 'skinparam linetype ortho
 skinparam linetype polyline
 hide circle
@@ -31,6 +32,7 @@ class "**Glossary**" as G<<BU>> {
   |_ notes 1..1   
   |_ date 1..1
   |_ scope 1..1
+  |_ status 1..1
   |_ owner 1..1
   |_ concept 1..*   
   --
@@ -39,14 +41,10 @@ class "**Glossary**" as G<<BU>> {
 
 class "**Concept**" as C<<BU>> {
   --
-  |_ designation 1..1
+  |_ designation 1..*
   |_ status 1..1
-  |_ owner 1..1
-  |_ code 1..1
-  |_ mapping 1..1
-    |_ system 0..1
-    |_ code 0..1
-    |_ mapping_type 0..1   
+  |_ code 1..1 
+  |_ codeSystem 1..1
   |_ source 0..1    
   --
 }
@@ -58,22 +56,22 @@ class "**Data Model**" as LM<<TM>> {
   |_ status 1..1
   |_ title 1..1
   |_ owner 1..1
-  |_ name 1..1
+  |_ element 1..*
   --
 }
 
 
 class "**Element**" as EL<<TM>> {
   --
-  |_ short 1..1
+  |_ name 1..1
   |_ definition 1..1
   |_ type 1..1
-  |_ binding 0..1
+  |_ valueDomain 0..*
   |_ comment 0..1
-  |_ constraint 0..1
+  |_ cardinality 0..1
   |_ mapping 0..*
-  |_ target 1..1
-  |_ relationship 0..1    
+    |_ targetConcept 1..1
+    |_ relationship 0..1    
   --
 }
 
@@ -81,36 +79,48 @@ class "**Element**" as EL<<TM>> {
 class "**ValueSet**" as VS<<TM>> {
   --
   |_ identifier 1..*   
-  |_ url 0..*   
+  |_ owner 1..1   
   |_ status 1..1
-  |_ name 1..1
   |_ title 1..1
-  |_ description 1..1   
+  |_ description 1..1
+  |_ definition 1..*
+    |_ rule 0..*
+    |_ concept 0..*
   --
 }
-
 
 
 class "**Profile**" as PR<<MD>> {
   --
   |_ identifier 1..*   
-  |_ url 0..*   
   |_ status 1..1
-  |_ name 1..1
   |_ title 1..1
   |_ description 1..1   
   |_ element 1..*
-    |_ ...
+
   --
 }
 
 
-G -r- C:  "            "  
+class "**CodeSystem**" as CS<<TM>> {
+  --
+  |_ identifier 1..*   
+  |_ owner 1..1   
+  |_ status 1..1
+  |_ title 1..1
+  |_ description 1..1
+  |_ concept 1..*
+  --
+}
 
+
+
+G -r- C:  "            "  
+C -r- CS: "            "  
+VS -r- C: "            "  
 LM -r- EL:  "            "  
 C -d- EL:  "            "  
 EL-r- VS: "             "
-
 LM-d- PR: "      "
 
 @enduml
