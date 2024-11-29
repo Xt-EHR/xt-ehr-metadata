@@ -1,16 +1,20 @@
 ### Information models
 
-Information models (or logical data models) provide a technology-agnostic view on data. Information models are easier to process/validate for clinical experts and they can be implemented using different data exchange/storage standards.  
+Data models are a representation of data structures for a given business purpose. They are a technology-agnostic abstraction. In the project, they are used to capture functional data needs from a non-technical perspective, allowing these needs to be realized in technical specifications (systems, interfaces) as well as regulations.
+
+
+
+
 
 The information models approach used by Xt-EHR for EHDS follows ISO 13972 "Health informatics — Clinical information models — Characteristics, structures and requirements."  
 
 Granularity of an information model can be different across use cases. A base information for medication would provide an optimal model for complete description of a medication in clinical context. A more granular model could be used on a regulatory or registry level, but not all this data may be relevant for eHealth users. On a national level, medication information may often be just a code or a reference, and that too may be sufficient in that context. Therefore, EHDS models are not designed to be directly implemented - every specification/implementation is free to extend or reduce these models to make them fit for their exact use case. However, it is expected that derived models do not conflict with the source model.
 
-Information models are published in [Xt-EHR Information Models repository](https://build.fhir.org/ig/Xt-EHR/xt-ehr-common/artifacts.html).
+Data models are published in [Xt-EHR Information Models repository](https://build.fhir.org/ig/Xt-EHR/xt-ehr-common/artifacts.html).
 
 #### Publishing format
 
-Information models are published as FHIR Logical Models (not to be confused with FHIR data exchange profiles). Each information model is conveyed by FHIR StructureDefinition resource (type "logical") and it is not tied to any other resources. For example, logical model for Patient would not be a profile on FHIR Patient resource, but a completely independent StructureDefinition.
+Data models are published as [FHIR Logical Models](https://hl7.org/fhir/logical.html) (not to be confused with FHIR data exchange profiles). Each information model is conveyed by FHIR StructureDefinition resource (type "logical") and it is not tied to any other resources. For example, logical model for Patient would not be a profile on FHIR Patient resource, but a completely independent StructureDefinition.
 
 FHIR Implementation Guide for publishing information models is based on FHIR R5 version (or any other newest current version). This does not imply that the actual implementations would have to use the same FHIR version or FHIR.
 
