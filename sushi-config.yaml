@@ -69,6 +69,7 @@ parameters:
 menu:
   Home: index.html
   Framework: 
+    Metadata model: metadata_model.html
     Setup: index.html
     Process: process.html
     Versioning: versioning.html
