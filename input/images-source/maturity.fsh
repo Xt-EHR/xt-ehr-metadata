@@ -152,12 +152,12 @@ SFunction .r. Function
 
 legend
 * A Data Rule has:
-  * Data Requirements (e.g. cardinality, valueset)
-  * Strength
-  * context:
-    * system function
-    * Operation
-    * Role
+** Data Requirements (e.g. cardinality, valueset)
+** Strength
+** Context:
+*** System function
+*** Operation
+*** Role
 
 Rules change and are in sets. 
 This allows composition, setting targets and roadmaps

@@ -4,6 +4,7 @@
 skinparam linetype polyline
 hide circle
 hide stereotype
+hide methods
 
 '!pragma layout smetana
 
@@ -26,8 +27,9 @@ skinparam class<<TM>> {
 }
 
 
+Package "Common definitions" as glossary {
+
 class "**Glossary**" as G<<BU>> {
-  --
   |_ title 1..1
   |_ notes 1..1   
   |_ date 1..1
@@ -35,34 +37,30 @@ class "**Glossary**" as G<<BU>> {
   |_ status 1..1
   |_ owner 1..1
   |_ concept 1..*   
-  --
 }
 
 
 class "**Concept**" as C<<BU>> {
-  --
   |_ designation 1..*
   |_ status 1..1
   |_ code 1..1 
-  |_ codeSystem 1..1
+  |_ codeSystem 1..1  
   |_ source 0..1    
-  --
 }
 
+}
 
+Package "Logical data structures" as logical {
 class "**Data Model**" as LM<<TM>> {
-  --
   |_ identifier 1..*   
   |_ status 1..1
   |_ title 1..1
   |_ owner 1..1
   |_ element 1..*
-  --
 }
 
 
 class "**Element**" as EL<<TM>> {
-  --
   |_ name 1..1
   |_ definition 1..1
   |_ type 1..1
@@ -70,57 +68,59 @@ class "**Element**" as EL<<TM>> {
   |_ comment 0..1
   |_ cardinality 0..1
   |_ mapping 0..*
-    |_ targetConcept 1..1
+    |_ targetConcept 1..1  
     |_ relationship 0..1    
-  --
 }
 
-
-class "**ValueSet**" as VS<<TM>> {
-  --
+Package "Terminologies" as term {
+class "**Value Set**" as VS<<TM>> {
   |_ identifier 1..*   
   |_ owner 1..1   
   |_ status 1..1
   |_ title 1..1
-  |_ description 1..1
+  |_ description 1..1  
   |_ definition 1..*
     |_ rule 0..*
     |_ concept 0..*
-  --
 }
 
+class "**Code System**" as CS<<TM>> {
+  |_ identifier 1..*   
+  |_ owner 1..1   
+  |_ status 1..1
+  |_ title 1..1
+  |_ description 1..1  
+  |_ concept 1..*
+}
+}
+}
 
+Package "Technical Specifications     " as Profiles {
 class "**Profile**" as PR<<MD>> {
-  --
   |_ identifier 1..*   
   |_ status 1..1
   |_ title 1..1
   |_ description 1..1   
   |_ element 1..*
-
-  --
 }
 
-
-class "**CodeSystem**" as CS<<TM>> {
-  --
-  |_ identifier 1..*   
-  |_ owner 1..1   
-  |_ status 1..1
-  |_ title 1..1
-  |_ description 1..1
-  |_ concept 1..*
-  --
 }
 
 
 
 G -r- C:  "            "  
-C -r- CS: "            "  
-VS -r- C: "            "  
+C <-r- CS: " represents " 
+C <-d- VS: "  contains "  
+C <-d- EL:  "   mapped to   "  
+
 LM -r- EL:  "            "  
-C -d- EL:  "            "  
 EL-r- VS: "             "
+VS -r- CS: "        "
 LM-d- PR: "      "
+
+LM -u[hidden]- G: "      "
+
+
+glossary -d[hidden]- term
 
 @enduml
