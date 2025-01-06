@@ -3,6 +3,7 @@
 skinparam linetype polyline
 hide circle
 hide stereotype
+hide methods
 
 '!pragma layout smetana
 
@@ -44,7 +45,7 @@ skinparam class<<TM+>> {
     }
 
 
-    class "**Empty**" as E<<TM>> {
+    class "**Boilerplate**" as E<<TM>> {
         Empty template for 
 creating repositories
     }
@@ -76,8 +77,8 @@ E  .r.> CE: "   Cloned into         "
 
 
 
-'E  .r.> IG: "Cloned into"
-'E .r.> Base: "Cloned into"
+E  .r.> IG: "Cloned into"
+E -r-> Base: "dependsOn"
 CE --> Base: "dependsOn"
 IG --> Base: "dependsOn"
 'IG -u-> T: "dependsOn"
