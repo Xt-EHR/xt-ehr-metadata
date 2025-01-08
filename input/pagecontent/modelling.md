@@ -4,24 +4,27 @@ Information models (or logical data models) provide a technology-agnostic view o
 
 The information models approach used by Xt-EHR for EHDS follows ISO 13972 "Health informatics — Clinical information models — Characteristics, structures and requirements."  
 
-Granularity of an information model can be different across use cases. A base information for medication would provide an optimal model for complete description of a medication in clinical context. A more granular model could be used on a regulatory or registry level, but not all this data may be relevant for eHealth users. On a national level, medication information may often be just a code or a reference, and that too may be sufficient in that context. Therefore, EHDS models are not designed to be directly implemented - every specification/implementation is free to extend or reduce these models to make them fit for their exact use case. However, it is expected that derived models do not conflict with the source model.
+Granularity of an information model can be different across use cases. A base information for medication would provide an optimal model for complete description of a medication in clinical context. A more granular model could be used on a regulatory or registry level, but not all this data may be relevant for eHealth users. On a national level, medication information may often be just a code or a reference, and that too may be sufficient in that context. Therefore, EHDS models may not be directly implementable - every specification/implementation is free to extend or reduce these models to make them fit for their exact use case. However, it is expected that derived models do not conflict with the source model.
 
-Information models are published in [Xt-EHR Information Models repository](https://build.fhir.org/ig/Xt-EHR/xt-ehr-common/artifacts.html).
+Common data models for the Xt-EHR specifications are published in [Xt-EHR Information Models repository](https://build.fhir.org/ig/Xt-EHR/xt-ehr-common/artifacts.html).
+
 
 #### Publishing format
 
-Information models are published as FHIR Logical Models (not to be confused with FHIR data exchange profiles). Each information model is conveyed by FHIR StructureDefinition resource (type "logical") and it is not tied to any other resources. For example, logical model for Patient would not be a profile on FHIR Patient resource, but a completely independent StructureDefinition.
+Xt-EHR Information models are published as [FHIR Logical Models](http://hl7.org/fhir/logical.html). While they may be represented similarly to the technical FHIR profiles, they remain representations of abstract data structures - simply captured as a technical artifact (a FHIR StructureDefinition) instead of a spreadsheet or document.
+These models are different and separate artifacts from the profiles. For example, logical model for Patient would not be a profile on FHIR Patient resource, but a completely independent StructureDefinition. It is possible to establish relationships between those. For exammple a model for "Prescription" is defined independently of any resource or any FHIR release, but it may me mapped to its FHIR implementation as a MedicationRequest in FHIR R4 or FHIR R5, as it may be mapped to a CDA document for ePrescription.
 
-FHIR Implementation Guide for publishing information models is based on FHIR R5 version (or any other newest current version). This does not imply that the actual implementations would have to use the same FHIR version or FHIR.
+FHIR Implementation Guide for publishing information models is based on current FHIR R5 release, but this does not imply that the actual implementations would have to use the same FHIR version or FHIR.
 
 #### Information model mapping to implementable specifications
 
-Mappings between information models and FHIR resources/profiles will be provided. 
-The preferred mapping format would be FHIR StructureMap resource, which would allow mapping to FHIR as well as to CDA. StructureMap provides a fully computable and machineprocessable mapping, but at the same time it is not easily readable for human users. Therefore, simplified solutions should be considered (ConceptMap, spreadsheet, etc).
+The metadata framework allows for mappings between information models and FHIR resources/profiles. This mapping should consider convenience of authoring and readability for the different authors. FHIR provides several mechanisms for this - namely element mapping and ConceptMaps.
+
 
 
 #### Data types
-Default data types to use with FHIR logical models are FHIR data types, which are implementation-specific and contain additional information and options which we would not want to impose on an information model level.  
+There is an agreement that the default data types to use with FHIR logical models are FHIR data types. While these data types are physically constrained and dependent of a FHIR release, in the logical models they are used with a representative intent, and not impose on the physical format. 
+For example, "dateTime" implies a specific format in FHIR resources, but in a logical model it is convened that these constraints may not apply in all cases, and some dateTime elements could have a different physical format. In other words, the logical models do not impose any physical constraints by default.
 
 Comparison of different data types standards.
 Complete mappings between the chosen approach and FHIR data types.
@@ -60,15 +63,3 @@ In previous projects (e.g. XpanDH) eHN Guidelines datasets have been published a
 
 This means that some models might not fully match the data sets in published guidelines.
 
-
-### Considerations and Decisions
-
-See Issues of the GitHub repository:
-- [issues regarding metadata strategy](https://github.com/Xt-EHR/xt-ehr-metadata/issues)  
-- [issues regarding information models](https://github.com/Xt-EHR/xt-ehr-common/issues)
-
-Bonn workshop decisions:
-- Patient and Practitioner will not have an underlying Person object.
-- All cardinalities for eHN datasets elements are provided as 0..* unless the text specifically states otherwise.
-- Data types are guessed from the description. If subelements are expected, the data type is BackboneElement.
-- Preferred code systems are provided in textual description.

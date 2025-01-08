@@ -39,6 +39,34 @@ publisher:
 # sub-pages.
 #
 
+pages: 
+  index.md:
+    title: Home
+  glossary.md:
+    title: Glossary of terms
+  metadata_model.md:
+    title: Metadata framework - requirements and specifications
+
+    process.md:
+      title: Metadata process
+    versioning.md:
+      title: Versioning
+
+  using.md: 
+    title: Using the Metadata Framework
+    modelling.md: 
+      title: Logical models
+    profiling.md: 
+      title: FHIR profiling
+    terminology.md: 
+      title: Terminology
+    glossaries.md: 
+      title: Glossaries
+    maturity.md: 
+      title: Conformance and Maturity assessment
+
+    
+
 
 
 #    title: Recommendations
