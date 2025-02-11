@@ -40,6 +40,9 @@ Mapping between EHDS verbs and HL7 Obligation concepts.
 | Accept, provide access​ | Render, Present​ | handle, display​ |
 | Download​ | Export​ | populate(?) |
 | Accept (+ insert?)​ | Import​ | handle + persist(?) |
+
+  
+  
 ​
 
 ## Data elements
