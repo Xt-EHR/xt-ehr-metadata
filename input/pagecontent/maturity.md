@@ -13,7 +13,7 @@ Requirements in functional profiles are rather high level but must refer to more
 
 ## Actor/Role
 
-> Not sure we need this... is this here the same as functional profile?
+> Not sure we need this... is this here the same as functional profile? E.g. a "Prescription function" vs. "Prescriber actor"
 
 ## Data operations
 
