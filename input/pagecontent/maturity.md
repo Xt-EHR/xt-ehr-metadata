@@ -85,7 +85,7 @@ For Xt-EHR we have opted to use the words "SHALL" and "SHOULD".
 
 A conformity framework rule for a system functional profile is the combination of a data element, a data operation, and a requirement strength, e.g.
 
-| System functional profile | Data element | Data operation | Requirement strength |
-| --- | --- | --- | --- |
-| Prescription function | Prescription.identifier | populate | SHALL |
+| System functional profile | Data element | Data operation | Requirement strength | Comment |
+| --- | --- | --- | --- | --- |
+| Prescription function | Prescription.identifier | able to populate | SHALL | An EHR system with a prescription function SHALL be able to populate the prescription identifier. Note that .identifier has cardinality `1..` in the current ePrescription logical model. |
 | ... | ... |  ... |  ... | 
