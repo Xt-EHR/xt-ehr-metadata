@@ -1,4 +1,4 @@
-# The Conformity-Maturity Framwork
+# The Conformity Framework
 
 This framework allows conformity rules to be stated on a detailed level for data sets [Article 15, 1.1] of the priority categories [Article 14] of EHDS.
 
