@@ -1,0 +1,91 @@
+@startuml
+skinparam linetype polyline
+hide circle
+hide stereotype
+hide methods
+
+
+package "Metadata" {
+
+class "**EHDSData**" as EHDSData {
+  |_ subject 1..1   
+  |_ origin 0..1   
+  |_ language 0..1    
+}
+
+class "**EHDSStructuredData**" as EHDSStructuredData {
+  |_ subject 1..1   
+  |_ authorship 1..*   
+    |_ author 1..1   
+    |_ datetime 1..1   
+  |_ lastUpdate 0..1   
+  |_ status 1..1   
+  |_ version 0..1   
+}
+
+    class "UnstructuredContent" as EHDSUnStructuredContent #DDC8B8 {
+    }
+
+    EHDSData <|-- EHDSStructuredData
+    EHDSData <|-r- EHDSUnStructuredContent: "                "
+}
+
+package "Commons" {
+    class "Prescription" as Prescription #ddf {
+    }
+
+    class "Report" as Report #efc {
+    }
+
+    class "Patient Summary" as PatientSummary #ffe {
+    }
+
+    class "Lab Report" as LabReport #dfe {
+    }
+
+    class "Imaging Report" as ImagingReport #cfe {
+    }
+
+    Report <|-- LabReport
+    Report <|-- ImagingReport
+}
+
+class "RESTful exchange" as RESTfulExchange #eff {
+}
+
+
+class "**EHDSDocument**" as EHDSDocument #efe {
+  |_ documentId 1..*   
+  |_ documentType 1..1   
+  |_ eventType 0..*   
+  |_ documentTitle 1..1   
+  |_ documentStatus 1..1   
+  |_ period 0..1   
+  |_ issuedDateTime 1..1   
+  |_ attestation 0..*   
+    |_ attester 1..1   
+    |_ datetime 1..1   
+  |_ legalAuthentication 0..1   
+    |_ legalAuthenticator 1..1   
+    |_ datetime 1..1   
+  |_ authorSpecialty 0..*   
+  |_ custodian 1..1   
+  |_ documentFormat 0..1   
+  |_ knowledgeResources 0..*   
+    |_ externalReference 0..*   
+    |_ relatedTo 0..*   
+}
+
+EHDSStructuredData <|-- RESTfulExchange
+
+EHDSStructuredData <|-- EHDSDocument
+
+EHDSDocument <|-- Prescription
+EHDSDocument <|-- Report
+EHDSDocument <|-- PatientSummary
+
+
+
+
+
+@enduml
