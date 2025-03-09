@@ -14,7 +14,6 @@ TO DO
 <br>
 <br>
 
-
 This framework allows conformity rules to be stated on a detailed level for data sets [Article 15, 1.1] of the priority categories [Article 14] of EHDS.
 
 ## Actor/Role
@@ -29,7 +28,7 @@ Operations performed on data elements. The operations have been selected from th
 
 | Data operation | Description |
 | --- | --- |
-| able to populate | Conformant applications producing resources SHALL/SHOULD/MAY be able to correctly populate this element. Notes: Typically, this means that an application needs to demonstrate during some conformity testing process that there are some conditions under which it populates the element with a correct value. (i.e. not a data-absent-reason or equivalent.) This obligation does not impose expectations on the circumstances in which the element will be sent, only that it can be in at least some situations. |
+| able to populate | Conformant applications producing resources SHALL/SHOULD/MAY be able to correctly populate this element. Notes: Typically, this means that an application needs to demonstrate during some conformance testing process that there are some conditions under which it populates the element with a correct value. (i.e. not a data-absent-reason or equivalent.) This obligation does not impose expectations on the circumstances in which the element will be sent, only that it can be in at least some situations. |
 | display | Conformant applications SHALL/SHOULD/MAY display the value of this element when presenting the data from the resource to a human user. Notes: exactly how it is displayed is not specified, but it means that a human looking at the content of the resource is made aware of the value of the element so that they can consider the meaning of the resource |
 | process | Conformant applications SHALL/SHOULD/MAY consider the value of this element when processing the resource as specified by the IG. Notes: this implies that the IG that specifies this obligation provides details about what processing is to be performed, and the obligation specifially relates to the processing specified in the IG of any ElementDefinition.valueAlternatives extensions as well as the value (or other extensions explicitly declared beneath the element in the profile containing the obligation. Examples might include consideration in decision support, consideration in claims evaluation, etc. |
 | persist | Conformant applications SHALL/SHOULD/MAY ensure that the value for this element is stored in a persistent data store. Notes: Exactly what the data store is not specified, nor how long it is stored for, but it is understood that the same value will be available in later exchanges. |
