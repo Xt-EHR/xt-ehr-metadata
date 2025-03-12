@@ -8,6 +8,7 @@ hide methods
 package "Metadata" {
 
 class "**EHDSData**" as EHDSData {
+  |_ identifier 0..*
   |_ subject 1..1   
   |_ origin 0..1   
   |_ language 0..1    
@@ -40,6 +41,9 @@ package "Commons" {
     class "Patient Summary" as PatientSummary #ffe {
     }
 
+    class "Discharge Report" as DischargeReport #eed {
+    }
+
     class "Lab Report" as LabReport #dfe {
     }
 
@@ -55,7 +59,7 @@ class "RESTful exchange" as RESTfulExchange #eff {
 
 
 class "**EHDSDocument**" as EHDSDocument #efe {
-  |_ documentId 1..*   
+  |_ identifier 1..*   
   |_ documentType 1..1   
   |_ eventType 0..*   
   |_ documentTitle 1..1   
@@ -83,7 +87,7 @@ EHDSStructuredData <|-- EHDSDocument
 EHDSDocument <|-- Prescription
 EHDSDocument <|-- Report
 EHDSDocument <|-- PatientSummary
-
+EHDSDocument <|-- DischargeReport
 
 
 
