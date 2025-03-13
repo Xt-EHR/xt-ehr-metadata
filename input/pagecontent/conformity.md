@@ -1,4 +1,18 @@
-# The Conformity Framework
+The metadata framework is extended to support conformity or conformance.
+
+Conformity or conformance is defined as ...
+
+To enable this, the metadata framework allows capturing the required/expected as well as the actual capabilities.
+
+
+TO DO 
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
 
 This framework allows conformity rules to be stated on a detailed level for data sets [Article 15, 1.1] of the priority categories [Article 14] of EHDS.
 

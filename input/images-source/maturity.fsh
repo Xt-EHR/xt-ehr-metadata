@@ -32,8 +32,8 @@ SOperation -d- SDR
 }
 
 
-specs -r[hidden]- criteria
-package criteria as "Maturity Criteria" {
+specs -r[hidden]- Criteria
+package  "Maturity Criteria" as Criteria {
     class "**Data**\n**Requirements**" as DR<<TM>> {
 '            |_ derivedFrom  1..*
 '            |_ component  1..*
@@ -159,13 +159,14 @@ legend
 *** Operation
 *** Role
 
-Rules change and are in sets. 
-This allows composition, setting targets and roadmaps
-Roadmaps have timelines
-"Maturity" score is a level of conformance.
-Conformance is the assessment of implementations
-(documented by specifications) against criteria.
+Rules may change and are in versioned Rule Sets. 
+This allows composition, setting targets and roadmaps.
 
+Roadmaps have timelines
+<i>Maturity</i> score is a level of conformance.
+
+<i>Conformance</i> is the assessment of implementations
+(documented by specifications) against criteria.
 end legend
 
 
