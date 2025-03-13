@@ -39,7 +39,7 @@ publisher:
 # sub-pages.
 #
 
-pages: 
+pages:
   index.md:
     title: Home
   glossary.md:
@@ -52,20 +52,20 @@ pages:
     versioning.md:
       title: Versioning
 
-  using.md: 
+  using.md:
     title: Using the Metadata Framework
-    modelling.md: 
+    modelling.md:
       title: Logical models
-    profiling.md: 
+    profiling.md:
       title: FHIR profiling
-    terminology.md: 
+    terminology.md:
       title: Terminology
-    glossaries.md: 
+    glossaries.md:
       title: Glossaries
-    conformity.md: 
+    conformity.md:
       title: Conformance and Maturity assessment
 
-    
+
 
 
 
@@ -96,16 +96,18 @@ parameters:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Framework: 
+  Framework:
     Metadata model: metadata_model.html
     Setup: index.html
     Process: process.html
     Versioning: versioning.html
-  Semantics: 
+  Semantics:
     Glossary: glossary.html
     Logical models: modelling.html
     FHIR profiling: profiling.html
     Terminology: terminology.html
+  Conformity:
+    Conformity Framework: conformity.html
   Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
