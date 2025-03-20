@@ -1,0 +1,40 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "Glossary",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Glossary</b></p><a name=\"Glossary\"> </a><a name=\"hcGlossary\"> </a><a name=\"Glossary-en-US\"> </a><p>This  code system <code>https://www.xt-ehr.eu/specifications/fhir/CodeSystem/Glossary</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">A.1.6.1<a name=\"Glossary-A.461.466.461\"> </a></td><td>Document Author</td><td>The author of a document or data set</td></tr><tr><td style=\"white-space:nowrap\">A.1.6.2<a name=\"Glossary-A.461.466.462\"> </a></td><td>Auhtor Date</td><td>The date the document or data set was authored</td></tr><tr><td style=\"white-space:nowrap\">A.1.9.12<a name=\"Glossary-A.461.469.4612\"> </a></td><td>Language</td><td>The language of the document or data set</td></tr></table></div>"
+  },
+  "url" : "https://www.xt-ehr.eu/specifications/fhir/CodeSystem/Glossary",
+  "version" : "0.1.0",
+  "name" : "Glossary",
+  "title" : "Glossary",
+  "status" : "draft",
+  "date" : "2025-03-12T08:18:33+00:00",
+  "publisher" : "Xt-EHR",
+  "contact" : [{
+    "name" : "Xt-EHR",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://Xt-EHR.eu"
+    }]
+  }],
+  "description" : "Glossary of terms",
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "A.1.6.1",
+    "display" : "Document Author",
+    "definition" : "The author of a document or data set"
+  },
+  {
+    "code" : "A.1.6.2",
+    "display" : "Auhtor Date",
+    "definition" : "The date the document or data set was authored"
+  },
+  {
+    "code" : "A.1.9.12",
+    "display" : "Language",
+    "definition" : "The language of the document or data set"
+  }]
+}

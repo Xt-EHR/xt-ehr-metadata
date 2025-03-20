@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Metadata Model - Xt-EHR v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/xt-ehr.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.xt-ehr.eu/">
+            <img height="61" alt="Project home" src="assets/images/xt-ehr-logo-transp.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Xt-EHR</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Framework
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Setup</a>
+      </li>
+      <li>
+        <a href="process.html">Process</a>
+      </li>
+      <li>
+        <a href="versioning.html">Versioning</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Semantics
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="glossary.html">Glossary</a>
+      </li>
+      <li>
+        <a href="modelling.html">Logical models</a>
+      </li>
+      <li>
+        <a href="profiling.html">FHIR profiling</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Metadata Model</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Xt-EHR, published by Xt-EHR. This guide is not an authorized publication; it is the continuous build for version 0.1.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/Xt-EHR/xt-ehr-metadata">https://github.com/Xt-EHR/xt-ehr-metadata</a> and changes regularly. See the <a href="https://www.xt-ehr.eu/specifications/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Metadata Model</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<p>…</p>
+<figure>
+  <?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="754px" preserveAspectRatio="none" style="width:607px;height:754px;background:#FFFFFF;" version="1.1" viewBox="0 0 607 754" width="607px" zoomAndPan="magnify"><defs /><g><!--class G--><g id="elem_G"><rect codeLine="27" fill="#FFFFCC" height="152.0781" id="G" rx="2.5" ry="2.5" style="stroke:#909050;stroke-width:0.5;" width="119" x="8" y="31.5" /><rect fill="#DDDD44" height="26.2969" rx="2.5" ry="2.5" style="stroke:#DDDD44;stroke-width:0.5;" width="119" x="8" y="31.5" /><rect fill="#DDDD44" height="2.5" style="stroke:#DDDD44;stroke-width:0.5;" width="119" x="8" y="55.2969" /><rect codeLine="27" fill="none" height="152.0781" id="G" rx="2.5" ry="2.5" style="stroke:#909050;stroke-width:0.5;" width="119" x="8" y="31.5" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="69" x="33" y="49.4951">Glossary</text><line style="stroke:#909050;stroke-width:0.5;" x1="9" x2="126" y1="57.7969" y2="57.7969" /><line style="stroke:#909050;stroke-width:1.0;" x1="9" x2="126" y1="65.7969" y2="65.7969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="30" y="88.792">title 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="30" y="105.0889">notes 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="30" y="121.3857">date 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="30" y="137.6826">scope 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="30" y="153.9795">owner 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="30" y="170.2764">concept 1..*</text><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="23" y="82.9453" /><line style="stroke:#000000;stroke-width:1.0;" x1="16" x2="24" y1="83.9453" y2="83.9453" /><line style="stroke:#000000;stroke-width:1.0;" x1="16" x2="16" y1="75.7969" y2="83.9453" /><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="23" y="99.2422" /><line style="stroke:#000000;stroke-width:1.0;" x1="16" x2="24" y1="100.2422" y2="100.2422" /><line style="stroke:#000000;stroke-width:1.0;" x1="16" x2="16" y1="83.9453" y2="100.2422" /><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="23" y="115.5391" /><line style="stroke:#000000;stroke-width:1.0;" x1="16" x2="24" y1="116.5391" y2="116.5391" /><line style="stroke:#000000;stroke-width:1.0;" x1="16" x2="16" y1="100.2422" y2="116.5391" /><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="23" y="131.8359" /><line style="stroke:#000000;stroke-width:1.0;" x1="16" x2="24" y1="132.8359" y2="132.8359" /><line style="stroke:#000000;stroke-width:1.0;" x1="16" x2="16" y1="116.5391" y2="132.8359" /><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="23" y="148.1328" /><line style="stroke:#000000;stroke-width:1.0;" x1="16" x2="24" y1="149.1328" y2="149.1328" /><line style="stroke:#000000;stroke-width:1.0;" x1="16" x2="16" y1="132.8359" y2="149.1328" /><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="23" y="164.4297" /><line style="stroke:#000000;stroke-width:1.0;" x1="16" x2="24" y1="165.4297" y2="165.4297" /><line style="stroke:#000000;stroke-width:1.0;" x1="16" x2="16" y1="149.1328" y2="165.4297" /><line style="stroke:#909050;stroke-width:1.0;" x1="9" x2="126" y1="175.5781" y2="175.5781" /></g><!--class C--><g id="elem_C"><rect codeLine="39" fill="#FFFFCC" height="200.9688" id="C" rx="2.5" ry="2.5" style="stroke:#909050;stroke-width:0.5;" width="169" x="212" y="7" /><rect fill="#DDDD44" height="26.2969" rx="2.5" ry="2.5" style="stroke:#DDDD44;stroke-width:0.5;" width="169" x="212" y="7" /><rect fill="#DDDD44" height="2.5" style="stroke:#DDDD44;stroke-width:0.5;" width="169" x="212" y="30.7969" /><rect codeLine="39" fill="none" height="200.9688" id="C" rx="2.5" ry="2.5" style="stroke:#909050;stroke-width:0.5;" width="169" x="212" y="7" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="66" x="263.5" y="24.9951">Concept</text><line style="stroke:#909050;stroke-width:0.5;" x1="213" x2="380" y1="33.2969" y2="33.2969" /><line style="stroke:#909050;stroke-width:1.0;" x1="213" x2="380" y1="41.2969" y2="41.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="111" x="234" y="64.292">designation 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="234" y="80.5889">status 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="234" y="96.8857">owner 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="234" y="113.1826">code 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="234" y="129.4795">mapping 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="242" y="145.7764">system 0..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="242" y="162.0732">code 0..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127" x="242" y="178.3701">mapping_type 0..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="234" y="194.667">source 0..1</text><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="227" y="58.4453" /><line style="stroke:#000000;stroke-width:1.0;" x1="220" x2="228" y1="59.4453" y2="59.4453" /><line style="stroke:#000000;stroke-width:1.0;" x1="220" x2="220" y1="51.2969" y2="59.4453" /><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="227" y="74.7422" /><line style="stroke:#000000;stroke-width:1.0;" x1="220" x2="228" y1="75.7422" y2="75.7422" /><line style="stroke:#000000;stroke-width:1.0;" x1="220" x2="220" y1="59.4453" y2="75.7422" /><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="227" y="91.0391" /><line style="stroke:#000000;stroke-width:1.0;" x1="220" x2="228" y1="92.0391" y2="92.0391" /><line style="stroke:#000000;stroke-width:1.0;" x1="220" x2="220" y1="75.7422" y2="92.0391" /><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="227" y="107.3359" /><line style="stroke:#000000;stroke-width:1.0;" x1="220" x2="228" y1="108.3359" y2="108.3359" /><line style="stroke:#000000;stroke-width:1.0;" x1="220" x2="220" y1="92.0391" y2="108.3359" /><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="227" y="123.6328" /><line style="stroke:#000000;stroke-width:1.0;" x1="220" x2="228" y1="124.6328" y2="124.6328" /><line style="stroke:#000000;stroke-width:1.0;" x1="220" x2="220" y1="108.3359" y2="124.6328" /><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="235" y="139.9297" /><line style="stroke:#000000;stroke-width:1.0;" x1="228" x2="236" y1="140.9297" y2="140.9297" /><line style="stroke:#000000;stroke-width:1.0;" x1="228" x2="228" y1="124.6328" y2="140.9297" /><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="235" y="156.2266" /><line style="stroke:#000000;stroke-width:1.0;" x1="228" x2="236" y1="157.2266" y2="157.2266" /><line style="stroke:#000000;stroke-width:1.0;" x1="228" x2="228" y1="140.9297" y2="157.2266" /><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="235" y="172.5234" /><line style="stroke:#000000;stroke-width:1.0;" x1="228" x2="236" y1="173.5234" y2="173.5234" /><line style="stroke:#000000;stroke-width:1.0;" x1="228" x2="228" y1="157.2266" y2="173.5234" /><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="227" y="188.8203" /><line style="stroke:#000000;stroke-width:1.0;" x1="220" x2="228" y1="189.8203" y2="189.8203" /><line style="stroke:#000000;stroke-width:1.0;" x1="220" x2="220" y1="124.6328" y2="189.8203" /><line style="stroke:#909050;stroke-width:1.0;" x1="213" x2="380" y1="199.9688" y2="199.9688" /></g><!--class LM--><g id="elem_LM"><rect codeLine="54" fill="#C2F0FF" height="135.7813" id="LM" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="121" x="17" y="317.5" /><rect fill="#88BBDD" height="26.2969" rx="2.5" ry="2.5" style="stroke:#88BBDD;stroke-width:0.5;" width="121" x="17" y="317.5" /><rect fill="#88BBDD" height="2.5" style="stroke:#88BBDD;stroke-width:0.5;" width="121" x="17" y="341.2969" /><rect codeLine="54" fill="none" height="135.7813" id="LM" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="121" x="17" y="317.5" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="87" x="34" y="335.4951">Data Model</text><line style="stroke:#505090;stroke-width:0.5;" x1="18" x2="137" y1="343.7969" y2="343.7969" /><line style="stroke:#505090;stroke-width:1.0;" x1="18" x2="137" y1="351.7969" y2="351.7969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="39" y="374.792">identifier 1..*</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="39" y="391.0889">status 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="39" y="407.3857">title 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="39" y="423.6826">owner 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="39" y="439.9795">name 1..1</text><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="32" y="368.9453" /><line style="stroke:#000000;stroke-width:1.0;" x1="25" x2="33" y1="369.9453" y2="369.9453" /><line style="stroke:#000000;stroke-width:1.0;" x1="25" x2="25" y1="361.7969" y2="369.9453" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="32" y="385.2422" /><line style="stroke:#000000;stroke-width:1.0;" x1="25" x2="33" y1="386.2422" y2="386.2422" /><line style="stroke:#000000;stroke-width:1.0;" x1="25" x2="25" y1="369.9453" y2="386.2422" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="32" y="401.5391" /><line style="stroke:#000000;stroke-width:1.0;" x1="25" x2="33" y1="402.5391" y2="402.5391" /><line style="stroke:#000000;stroke-width:1.0;" x1="25" x2="25" y1="386.2422" y2="402.5391" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="32" y="417.8359" /><line style="stroke:#000000;stroke-width:1.0;" x1="25" x2="33" y1="418.8359" y2="418.8359" /><line style="stroke:#000000;stroke-width:1.0;" x1="25" x2="25" y1="402.5391" y2="418.8359" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="32" y="434.1328" /><line style="stroke:#000000;stroke-width:1.0;" x1="25" x2="33" y1="435.1328" y2="435.1328" /><line style="stroke:#000000;stroke-width:1.0;" x1="25" x2="25" y1="418.8359" y2="435.1328" /><line style="stroke:#505090;stroke-width:1.0;" x1="18" x2="137" y1="445.2813" y2="445.2813" /></g><!--class EL--><g id="elem_EL"><rect codeLine="65" fill="#C2F0FF" height="200.9688" id="EL" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="148" x="222.5" y="285" /><rect fill="#88BBDD" height="26.2969" rx="2.5" ry="2.5" style="stroke:#88BBDD;stroke-width:0.5;" width="148" x="222.5" y="285" /><rect fill="#88BBDD" height="2.5" style="stroke:#88BBDD;stroke-width:0.5;" width="148" x="222.5" y="308.7969" /><rect codeLine="65" fill="none" height="200.9688" id="EL" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="148" x="222.5" y="285" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="63" x="265" y="302.9951">Element</text><line style="stroke:#505090;stroke-width:0.5;" x1="223.5" x2="369.5" y1="311.2969" y2="311.2969" /><line style="stroke:#505090;stroke-width:1.0;" x1="223.5" x2="369.5" y1="319.2969" y2="319.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66" x="244.5" y="342.292">short 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="244.5" y="358.5889">definition 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="244.5" y="374.8857">type 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81" x="244.5" y="391.1826">binding 0..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="244.5" y="407.4795">comment 0..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="99" x="244.5" y="423.7764">constraint 0..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="244.5" y="440.0732">mapping 0..*</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71" x="244.5" y="456.3701">target 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="110" x="244.5" y="472.667">relationship 0..1</text><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="237.5" y="336.4453" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="238.5" y1="337.4453" y2="337.4453" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="230.5" y1="329.2969" y2="337.4453" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="237.5" y="352.7422" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="238.5" y1="353.7422" y2="353.7422" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="230.5" y1="337.4453" y2="353.7422" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="237.5" y="369.0391" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="238.5" y1="370.0391" y2="370.0391" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="230.5" y1="353.7422" y2="370.0391" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="237.5" y="385.3359" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="238.5" y1="386.3359" y2="386.3359" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="230.5" y1="370.0391" y2="386.3359" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="237.5" y="401.6328" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="238.5" y1="402.6328" y2="402.6328" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="230.5" y1="386.3359" y2="402.6328" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="237.5" y="417.9297" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="238.5" y1="418.9297" y2="418.9297" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="230.5" y1="402.6328" y2="418.9297" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="237.5" y="434.2266" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="238.5" y1="435.2266" y2="435.2266" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="230.5" y1="418.9297" y2="435.2266" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="237.5" y="450.5234" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="238.5" y1="451.5234" y2="451.5234" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="230.5" y1="435.2266" y2="451.5234" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="237.5" y="466.8203" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="238.5" y1="467.8203" y2="467.8203" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="230.5" y1="451.5234" y2="467.8203" /><line style="stroke:#505090;stroke-width:1.0;" x1="223.5" x2="369.5" y1="477.9688" y2="477.9688" /></g><!--class VS--><g id="elem_VS"><rect codeLine="80" fill="#C2F0FF" height="152.0781" id="VS" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="141" x="459" y="309.5" /><rect fill="#88BBDD" height="26.2969" rx="2.5" ry="2.5" style="stroke:#88BBDD;stroke-width:0.5;" width="141" x="459" y="309.5" /><rect fill="#88BBDD" height="2.5" style="stroke:#88BBDD;stroke-width:0.5;" width="141" x="459" y="333.2969" /><rect codeLine="80" fill="none" height="152.0781" id="VS" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="141" x="459" y="309.5" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="70" x="494.5" y="327.4951">ValueSet</text><line style="stroke:#505090;stroke-width:0.5;" x1="460" x2="599" y1="335.7969" y2="335.7969" /><line style="stroke:#505090;stroke-width:1.0;" x1="460" x2="599" y1="343.7969" y2="343.7969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="481" y="366.792">identifier 1..*</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="481" y="383.0889">url 0..*</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="481" y="399.3857">status 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="481" y="415.6826">name 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="481" y="431.9795">title 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="481" y="448.2764">description 1..1</text><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="474" y="360.9453" /><line style="stroke:#000000;stroke-width:1.0;" x1="467" x2="475" y1="361.9453" y2="361.9453" /><line style="stroke:#000000;stroke-width:1.0;" x1="467" x2="467" y1="353.7969" y2="361.9453" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="474" y="377.2422" /><line style="stroke:#000000;stroke-width:1.0;" x1="467" x2="475" y1="378.2422" y2="378.2422" /><line style="stroke:#000000;stroke-width:1.0;" x1="467" x2="467" y1="361.9453" y2="378.2422" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="474" y="393.5391" /><line style="stroke:#000000;stroke-width:1.0;" x1="467" x2="475" y1="394.5391" y2="394.5391" /><line style="stroke:#000000;stroke-width:1.0;" x1="467" x2="467" y1="378.2422" y2="394.5391" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="474" y="409.8359" /><line style="stroke:#000000;stroke-width:1.0;" x1="467" x2="475" y1="410.8359" y2="410.8359" /><line style="stroke:#000000;stroke-width:1.0;" x1="467" x2="467" y1="394.5391" y2="410.8359" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="474" y="426.1328" /><line style="stroke:#000000;stroke-width:1.0;" x1="467" x2="475" y1="427.1328" y2="427.1328" /><line style="stroke:#000000;stroke-width:1.0;" x1="467" x2="467" y1="410.8359" y2="427.1328" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="474" y="442.4297" /><line style="stroke:#000000;stroke-width:1.0;" x1="467" x2="475" y1="443.4297" y2="443.4297" /><line style="stroke:#000000;stroke-width:1.0;" x1="467" x2="467" y1="427.1328" y2="443.4297" /><line style="stroke:#505090;stroke-width:1.0;" x1="460" x2="599" y1="453.5781" y2="453.5781" /></g><!--class PR--><g id="elem_PR"><rect codeLine="93" fill="#C9FFC9" height="184.6719" id="PR" rx="2.5" ry="2.5" style="stroke:#2F4F4F;stroke-width:0.5;" width="141" x="7" y="563" /><rect fill="#77BB88" height="26.2969" rx="2.5" ry="2.5" style="stroke:#77BB88;stroke-width:0.5;" width="141" x="7" y="563" /><rect fill="#77BB88" height="2.5" style="stroke:#77BB88;stroke-width:0.5;" width="141" x="7" y="586.7969" /><rect codeLine="93" fill="none" height="184.6719" id="PR" rx="2.5" ry="2.5" style="stroke:#2F4F4F;stroke-width:0.5;" width="141" x="7" y="563" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="51" x="52" y="580.9951">Profile</text><line style="stroke:#2F4F4F;stroke-width:0.5;" x1="8" x2="147" y1="589.2969" y2="589.2969" /><line style="stroke:#2F4F4F;stroke-width:1.0;" x1="8" x2="147" y1="597.2969" y2="597.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="29" y="620.292">identifier 1..*</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="29" y="636.5889">url 0..*</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="29" y="652.8857">status 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="29" y="669.1826">name 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="29" y="685.4795">title 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="29" y="701.7764">description 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="29" y="718.0732">element 1..*</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="37" y="734.3701">...</text><rect fill="#C9FFC9" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="22" y="614.4453" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="23" y1="615.4453" y2="615.4453" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="15" y1="607.2969" y2="615.4453" /><rect fill="#C9FFC9" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="22" y="630.7422" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="23" y1="631.7422" y2="631.7422" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="15" y1="615.4453" y2="631.7422" /><rect fill="#C9FFC9" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="22" y="647.0391" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="23" y1="648.0391" y2="648.0391" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="15" y1="631.7422" y2="648.0391" /><rect fill="#C9FFC9" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="22" y="663.3359" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="23" y1="664.3359" y2="664.3359" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="15" y1="648.0391" y2="664.3359" /><rect fill="#C9FFC9" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="22" y="679.6328" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="23" y1="680.6328" y2="680.6328" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="15" y1="664.3359" y2="680.6328" /><rect fill="#C9FFC9" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="22" y="695.9297" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="23" y1="696.9297" y2="696.9297" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="15" y1="680.6328" y2="696.9297" /><rect fill="#C9FFC9" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="22" y="712.2266" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="23" y1="713.2266" y2="713.2266" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="15" y1="696.9297" y2="713.2266" /><rect fill="#C9FFC9" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="30" y="728.5234" /><line style="stroke:#000000;stroke-width:1.0;" x1="23" x2="31" y1="729.5234" y2="729.5234" /><line style="stroke:#000000;stroke-width:1.0;" x1="23" x2="23" y1="713.2266" y2="729.5234" /><line style="stroke:#2F4F4F;stroke-width:1.0;" x1="8" x2="147" y1="739.6719" y2="739.6719" /></g><!--link G to C--><g id="link_G_C"><path codeLine="107" d="M127.07,107.5 C152.91,107.5 183.65,107.5 211.8,107.5 " fill="none" id="G-C" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="48" x="145.5" y="100.5669">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g><!--link LM to EL--><g id="link_LM_EL"><path codeLine="109" d="M138.21,385.5 C164.29,385.5 195.01,385.5 222.41,385.5 " fill="none" id="LM-EL" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="48" x="156.25" y="378.5669">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g><!--link C to EL--><g id="link_C_EL"><path codeLine="110" d="M296.5,208.14 C296.5,233 296.5,259.67 296.5,284.54 " fill="none" id="C-EL" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="48" x="297.5" y="251.0669">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g><!--link EL to VS--><g id="link_EL_VS"><path codeLine="111" d="M370.54,385.5 C398.79,385.5 430.9,385.5 458.83,385.5 " fill="none" id="EL-VS" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="388.75" y="378.5669">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g><!--link LM to PR--><g id="link_LM_PR"><path codeLine="113" d="M77.5,453.78 C77.5,486.81 77.5,527.09 77.5,562.88 " fill="none" id="LM-PR" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="24" x="78.5" y="529.0669">&#160;&#160;&#160;&#160;&#160;&#160;</text></g></g></svg>
+</figure>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://Xt-EHR.eu">Xt-EHR</a>.  Package hl7.eu.fhir.xt-ehr.foundation#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Aug 15, 2024 18:05+0000">2024-08-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div id="container" style="color: #ffffff; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+  <div>
+    Links: 
+    <a style="color: #ffffff" href="toc.html">Table of Contents</a> |
+    <a style="color: #ffffff" href="qa.html">QA Report</a>
+    <a style="color: #ffffff" rel="license" href="http://hl7.org/fhir/R5/license.html">
+      <img style="border-style: none;" alt="CC0" src="cc0.png"/>
+    </a><br/>
+    The Xt-EHR action is co-funded by the European Union, EU4Health Program 2021-2027, under Grant Agreement Nr.º 101128085.
+  </div>
+  <div>
+    <img height="41" alt="a EU funded project" src="assets/images/eu.png"/>
+  </div>
+</div>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
