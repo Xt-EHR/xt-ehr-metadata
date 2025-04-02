@@ -1,4 +1,4 @@
-The metadata framework is extended to support conformity or conformance.
+<!-- The metadata framework is extended to support conformity or conformance. -->
 
 **Conformity or conformance** is defined as: fulfilment of a product, process, or service of specified requirements (ISO/DIS 27269:2024, EN ISO/HL7 10781:2023)
 
@@ -12,6 +12,19 @@ Maturity of a particular EHR system represents required minimal level of conform
 | Level 1 | Lowest maturity level - information is provided in basic, unstructured, narrative form. Corresponds to CDA L1. |
 | Level 2 | Medium maturity level - Information is provided in clearly identified sections or structures, mostly in the narrative form. Corresponds to CDA L2. |
 | Level 3 |Highest maturity level - Information is provided in fully structured form as in the Level 2, coded information can be provided where required. Corresponds to CDA L3. |
+
+### EHR system functional profile
+
+[from D8.1 draft]
+A functional profile gathers (at least) functional requirements (including data contents) for a set of EHR systems which have the purpose of use matching the profile. Profile sets requirements for all systems which have a certain purpose of use.
+
+One EHR system may fulfil several functional profiles (e.g. prescribing, outpatient management, …).
+
+Requirements in functional profiles are rather high level but must refer to more detailed specifications such as implementation guides (of WP6, WP7).
+
+Definition: Functional profile is a subset of comprehensive list of functional and data requirements reflecting the purpose of certain EHR systems or a specific healthcare delivery setting (EN ISO/HL7 10781:2023, adapted). Note: one system may conform to several functional profiles
+
+> TODO: Decide how to implement conformity requirements in our deliverables.
 
 
 ### Conformance Framework
@@ -40,9 +53,9 @@ Operations performed on data elements. The operations have been selected from th
 
 ##### Mapping between EHDS verbs and Data operations (HL7 Obligation) concepts.
 
-EHDS regulation includes definitons of the EHR systems and required functionalities usign several different terms. In this chapter we tried to map those terms into applicable HL7 FHIR obligations, that are used as a basis for the Conformity model.
+Acording to the regulation the EHR system is defined as “… any system where the appliance or software allows to **store**, **intermediate**, **export**, **import**, **convert**, **edit** or **view** personal electronic health data that belongs to the priority categories of personal electronic health data”.
 
-Acording to the regulation the EHR system is defined as “… any system where the appliance or software allows to **store**, **intermediate**, **export**, **import**, **convert**, **edit** or **view** personal electronic health data that belongs to the priority categories of personal electronic health data”
+EHDS regulation uses several different terms to define the EHR systems and its required functionalities. In this chapter we tried to find match between EHDS terms and applicable HL7 FHIR obligations, that are used as a basis for this Conformity model.
 
 | EHDS Term | EN ISO/HL7 10781​ | HL7 Obligation Code |
 | --- | --- | --- |
@@ -74,13 +87,18 @@ For Xt-EHR we have opted to use the words "SHALL" and "SHOULD".
 2. **SHOULD** ...mean that there may exist valid reasons in particular circumstances to ignore a particular item, but the full implications must be understood and carefully weighed before choosing a different course.
 3. **MAY** ...mean that an item is truly optional. This is the default value in application of this framework.
 
-#### Rule
+#### Conformity rules
 
-A conformity framework rule for a required level of conformity of the logical model and/or implementation specification is the combination of a data element, a data operation, and a requirement strength, e.g.
+A conformity framework rule for a required level of conformity of the logical model and/or implementation specification is the combination of a data element, a data operation, and a requirement strength, e.g.:
 
 | System functional profile | Data element | Data operation | Requirement strength | Comment |
 | --- | --- | --- | --- | --- |
-| Prescription function | Prescription.identifier | able to populate | SHALL | An EHR system with a prescription function SHALL be able to populate the prescription identifier. |
+| Prescription function | Prescription.identifier | able-to-populate | SHALL | An EHR system with a prescription function SHALL be able to populate the prescription identifier. |
+| Test result producer function | observation.code | able-to-populate | SHALL | An EHR system with a test result producer function SHALL be able to populate the observation test code. |
+| Test result producer function | observation.value | able-to-populate | SHALL | An EHR system with a test result producer function SHALL be able to populate the observation test result value. |
+| Test result consumer function | observation.name | display | SHALL | An EHR system with a test result consumer function SHALL be able to populate the observation test name. |
+| Test result consumer function | observation.value | display | SHALL | An EHR system with a test result consumer function SHALL be able to populate the observation result value. |
+| Test result consumer function | observation.value.unit | display | SHALL | An EHR system with a test result consumer function SHALL be able to populate the observation result value unit. |
 | ... | ... |  ... |  ... |
 
 ##### Rules and cardinality
@@ -89,16 +107,3 @@ Rules specify obligations to perform certain operation. This represent a differe
 > TODO: Find better description
 
 > TODO: Add conformity assertions
-
-### EHR system functional profile
-
-[from D8.1 draft]
-A functional profile gathers (at least) functional requirements (including data contents) for a set of EHR systems which have the purpose of use matching the profile. Profile sets requirements for all systems which have a certain purpose of use.
-
-One EHR system may fulfil several functional profiles (e.g. prescribing, outpatient management, …).
-
-Requirements in functional profiles are rather high level but must refer to more detailed specifications such as implementation guides (of WP6, WP7).
-
-Definition: functional profile: subset of comprehensive list of functional and data requirements reflecting the purpose of certain EHR systems or a specific healthcare delivery setting (EN ISO/HL7 10781:2023, adapted). Note: one system may conform to several functional profiles
-
-> TODO: Decide how to implement conformity requirements in our deliverables.
