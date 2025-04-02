@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Metadata Model - Xt-EHR v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/xt-ehr.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.xt-ehr.eu/">
+            <img height="61" alt="Project home" src="assets/images/xt-ehr-logo-transp.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Xt-EHR</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Framework
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Setup</a>
+      </li>
+      <li>
+        <a href="process.html">Process</a>
+      </li>
+      <li>
+        <a href="versioning.html">Versioning</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Semantics
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="glossary.html">Glossary</a>
+      </li>
+      <li>
+        <a href="modelling.html">Logical models</a>
+      </li>
+      <li>
+        <a href="profiling.html">FHIR profiling</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Metadata Model</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Xt-EHR, published by Xt-EHR. This guide is not an authorized publication; it is the continuous build for version 0.1.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/Xt-EHR/xt-ehr-metadata/tree/wip">https://github.com/Xt-EHR/xt-ehr-metadata/tree/wip</a> and changes regularly. See the <a href="https://www.xt-ehr.eu/specifications/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Metadata Model</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<p>…</p>
+<figure>
+  <?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="689px" preserveAspectRatio="none" style="width:726px;height:689px;background:#FFFFFF;" version="1.1" viewBox="0 0 726 689" width="726px" zoomAndPan="magnify"><defs /><g><!--class G--><g id="elem_G"><rect codeLine="28" fill="#FFFFCC" height="168.375" id="G" rx="2.5" ry="2.5" style="stroke:#909050;stroke-width:0.5;" width="119" x="164" y="7" /><rect fill="#DDDD44" height="26.2969" rx="2.5" ry="2.5" style="stroke:#DDDD44;stroke-width:0.5;" width="119" x="164" y="7" /><rect fill="#DDDD44" height="2.5" style="stroke:#DDDD44;stroke-width:0.5;" width="119" x="164" y="30.7969" /><rect codeLine="28" fill="none" height="168.375" id="G" rx="2.5" ry="2.5" style="stroke:#909050;stroke-width:0.5;" width="119" x="164" y="7" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="69" x="189" y="24.9951">Glossary</text><line style="stroke:#909050;stroke-width:0.5;" x1="165" x2="282" y1="33.2969" y2="33.2969" /><line style="stroke:#909050;stroke-width:1.0;" x1="165" x2="282" y1="41.2969" y2="41.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="186" y="64.292">title 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="186" y="80.5889">notes 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="186" y="96.8857">date 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="186" y="113.1826">scope 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="186" y="129.4795">status 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="186" y="145.7764">owner 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="186" y="162.0732">concept 1..*</text><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="179" y="58.4453" /><line style="stroke:#000000;stroke-width:1.0;" x1="172" x2="180" y1="59.4453" y2="59.4453" /><line style="stroke:#000000;stroke-width:1.0;" x1="172" x2="172" y1="51.2969" y2="59.4453" /><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="179" y="74.7422" /><line style="stroke:#000000;stroke-width:1.0;" x1="172" x2="180" y1="75.7422" y2="75.7422" /><line style="stroke:#000000;stroke-width:1.0;" x1="172" x2="172" y1="59.4453" y2="75.7422" /><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="179" y="91.0391" /><line style="stroke:#000000;stroke-width:1.0;" x1="172" x2="180" y1="92.0391" y2="92.0391" /><line style="stroke:#000000;stroke-width:1.0;" x1="172" x2="172" y1="75.7422" y2="92.0391" /><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="179" y="107.3359" /><line style="stroke:#000000;stroke-width:1.0;" x1="172" x2="180" y1="108.3359" y2="108.3359" /><line style="stroke:#000000;stroke-width:1.0;" x1="172" x2="172" y1="92.0391" y2="108.3359" /><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="179" y="123.6328" /><line style="stroke:#000000;stroke-width:1.0;" x1="172" x2="180" y1="124.6328" y2="124.6328" /><line style="stroke:#000000;stroke-width:1.0;" x1="172" x2="172" y1="108.3359" y2="124.6328" /><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="179" y="139.9297" /><line style="stroke:#000000;stroke-width:1.0;" x1="172" x2="180" y1="140.9297" y2="140.9297" /><line style="stroke:#000000;stroke-width:1.0;" x1="172" x2="172" y1="124.6328" y2="140.9297" /><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="179" y="156.2266" /><line style="stroke:#000000;stroke-width:1.0;" x1="172" x2="180" y1="157.2266" y2="157.2266" /><line style="stroke:#000000;stroke-width:1.0;" x1="172" x2="172" y1="140.9297" y2="157.2266" /><line style="stroke:#909050;stroke-width:1.0;" x1="165" x2="282" y1="167.375" y2="167.375" /></g><!--class C--><g id="elem_C"><rect codeLine="41" fill="#FFFFCC" height="135.7813" id="C" rx="2.5" ry="2.5" style="stroke:#909050;stroke-width:0.5;" width="138" x="367.5" y="23" /><rect fill="#DDDD44" height="26.2969" rx="2.5" ry="2.5" style="stroke:#DDDD44;stroke-width:0.5;" width="138" x="367.5" y="23" /><rect fill="#DDDD44" height="2.5" style="stroke:#DDDD44;stroke-width:0.5;" width="138" x="367.5" y="46.7969" /><rect codeLine="41" fill="none" height="135.7813" id="C" rx="2.5" ry="2.5" style="stroke:#909050;stroke-width:0.5;" width="138" x="367.5" y="23" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="66" x="403.5" y="40.9951">Concept</text><line style="stroke:#909050;stroke-width:0.5;" x1="368.5" x2="504.5" y1="49.2969" y2="49.2969" /><line style="stroke:#909050;stroke-width:1.0;" x1="368.5" x2="504.5" y1="57.2969" y2="57.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="389.5" y="80.292">designation 1..*</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="389.5" y="96.5889">status 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="389.5" y="112.8857">code 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="389.5" y="129.1826">codeSystem 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="389.5" y="145.4795">source 0..1</text><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="382.5" y="74.4453" /><line style="stroke:#000000;stroke-width:1.0;" x1="375.5" x2="383.5" y1="75.4453" y2="75.4453" /><line style="stroke:#000000;stroke-width:1.0;" x1="375.5" x2="375.5" y1="67.2969" y2="75.4453" /><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="382.5" y="90.7422" /><line style="stroke:#000000;stroke-width:1.0;" x1="375.5" x2="383.5" y1="91.7422" y2="91.7422" /><line style="stroke:#000000;stroke-width:1.0;" x1="375.5" x2="375.5" y1="75.4453" y2="91.7422" /><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="382.5" y="107.0391" /><line style="stroke:#000000;stroke-width:1.0;" x1="375.5" x2="383.5" y1="108.0391" y2="108.0391" /><line style="stroke:#000000;stroke-width:1.0;" x1="375.5" x2="375.5" y1="91.7422" y2="108.0391" /><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="382.5" y="123.3359" /><line style="stroke:#000000;stroke-width:1.0;" x1="375.5" x2="383.5" y1="124.3359" y2="124.3359" /><line style="stroke:#000000;stroke-width:1.0;" x1="375.5" x2="375.5" y1="108.0391" y2="124.3359" /><rect fill="#FFFFCC" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="382.5" y="139.6328" /><line style="stroke:#000000;stroke-width:1.0;" x1="375.5" x2="383.5" y1="140.6328" y2="140.6328" /><line style="stroke:#000000;stroke-width:1.0;" x1="375.5" x2="375.5" y1="124.3359" y2="140.6328" /><line style="stroke:#909050;stroke-width:1.0;" x1="368.5" x2="504.5" y1="150.7813" y2="150.7813" /></g><!--class LM--><g id="elem_LM"><rect codeLine="52" fill="#C2F0FF" height="135.7813" id="LM" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="121" x="17" y="284.5" /><rect fill="#88BBDD" height="26.2969" rx="2.5" ry="2.5" style="stroke:#88BBDD;stroke-width:0.5;" width="121" x="17" y="284.5" /><rect fill="#88BBDD" height="2.5" style="stroke:#88BBDD;stroke-width:0.5;" width="121" x="17" y="308.2969" /><rect codeLine="52" fill="none" height="135.7813" id="LM" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="121" x="17" y="284.5" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="87" x="34" y="302.4951">Data Model</text><line style="stroke:#505090;stroke-width:0.5;" x1="18" x2="137" y1="310.7969" y2="310.7969" /><line style="stroke:#505090;stroke-width:1.0;" x1="18" x2="137" y1="318.7969" y2="318.7969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="39" y="341.792">identifier 1..*</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="39" y="358.0889">status 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="39" y="374.3857">title 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="39" y="390.6826">owner 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="39" y="406.9795">element 1..*</text><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="32" y="335.9453" /><line style="stroke:#000000;stroke-width:1.0;" x1="25" x2="33" y1="336.9453" y2="336.9453" /><line style="stroke:#000000;stroke-width:1.0;" x1="25" x2="25" y1="328.7969" y2="336.9453" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="32" y="352.2422" /><line style="stroke:#000000;stroke-width:1.0;" x1="25" x2="33" y1="353.2422" y2="353.2422" /><line style="stroke:#000000;stroke-width:1.0;" x1="25" x2="25" y1="336.9453" y2="353.2422" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="32" y="368.5391" /><line style="stroke:#000000;stroke-width:1.0;" x1="25" x2="33" y1="369.5391" y2="369.5391" /><line style="stroke:#000000;stroke-width:1.0;" x1="25" x2="25" y1="353.2422" y2="369.5391" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="32" y="384.8359" /><line style="stroke:#000000;stroke-width:1.0;" x1="25" x2="33" y1="385.8359" y2="385.8359" /><line style="stroke:#000000;stroke-width:1.0;" x1="25" x2="25" y1="369.5391" y2="385.8359" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="32" y="401.1328" /><line style="stroke:#000000;stroke-width:1.0;" x1="25" x2="33" y1="402.1328" y2="402.1328" /><line style="stroke:#000000;stroke-width:1.0;" x1="25" x2="25" y1="385.8359" y2="402.1328" /><line style="stroke:#505090;stroke-width:1.0;" x1="18" x2="137" y1="412.2813" y2="412.2813" /></g><!--class EL--><g id="elem_EL"><rect codeLine="63" fill="#C2F0FF" height="200.9688" id="EL" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="160" x="222.5" y="252" /><rect fill="#88BBDD" height="26.2969" rx="2.5" ry="2.5" style="stroke:#88BBDD;stroke-width:0.5;" width="160" x="222.5" y="252" /><rect fill="#88BBDD" height="2.5" style="stroke:#88BBDD;stroke-width:0.5;" width="160" x="222.5" y="275.7969" /><rect codeLine="63" fill="none" height="200.9688" id="EL" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="160" x="222.5" y="252" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="63" x="271" y="269.9951">Element</text><line style="stroke:#505090;stroke-width:0.5;" x1="223.5" x2="381.5" y1="278.2969" y2="278.2969" /><line style="stroke:#505090;stroke-width:1.0;" x1="223.5" x2="381.5" y1="286.2969" y2="286.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="244.5" y="309.292">name 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="244.5" y="325.5889">definition 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="244.5" y="341.8857">type 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="244.5" y="358.1826">valueDomain 0..*</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="244.5" y="374.4795">comment 0..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="244.5" y="390.7764">cardinality 0..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="244.5" y="407.0732">mapping 0..*</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="130" x="252.5" y="423.3701">targetConcept 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="110" x="252.5" y="439.667">relationship 0..1</text><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="237.5" y="303.4453" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="238.5" y1="304.4453" y2="304.4453" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="230.5" y1="296.2969" y2="304.4453" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="237.5" y="319.7422" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="238.5" y1="320.7422" y2="320.7422" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="230.5" y1="304.4453" y2="320.7422" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="237.5" y="336.0391" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="238.5" y1="337.0391" y2="337.0391" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="230.5" y1="320.7422" y2="337.0391" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="237.5" y="352.3359" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="238.5" y1="353.3359" y2="353.3359" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="230.5" y1="337.0391" y2="353.3359" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="237.5" y="368.6328" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="238.5" y1="369.6328" y2="369.6328" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="230.5" y1="353.3359" y2="369.6328" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="237.5" y="384.9297" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="238.5" y1="385.9297" y2="385.9297" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="230.5" y1="369.6328" y2="385.9297" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="237.5" y="401.2266" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="238.5" y1="402.2266" y2="402.2266" /><line style="stroke:#000000;stroke-width:1.0;" x1="230.5" x2="230.5" y1="385.9297" y2="402.2266" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="245.5" y="417.5234" /><line style="stroke:#000000;stroke-width:1.0;" x1="238.5" x2="246.5" y1="418.5234" y2="418.5234" /><line style="stroke:#000000;stroke-width:1.0;" x1="238.5" x2="238.5" y1="402.2266" y2="418.5234" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="245.5" y="433.8203" /><line style="stroke:#000000;stroke-width:1.0;" x1="238.5" x2="246.5" y1="434.8203" y2="434.8203" /><line style="stroke:#000000;stroke-width:1.0;" x1="238.5" x2="238.5" y1="418.5234" y2="434.8203" /><line style="stroke:#505090;stroke-width:1.0;" x1="223.5" x2="381.5" y1="444.9688" y2="444.9688" /></g><!--class VS--><g id="elem_VS"><rect codeLine="78" fill="#C2F0FF" height="184.6719" id="VS" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="129" x="471" y="260" /><rect fill="#88BBDD" height="26.2969" rx="2.5" ry="2.5" style="stroke:#88BBDD;stroke-width:0.5;" width="129" x="471" y="260" /><rect fill="#88BBDD" height="2.5" style="stroke:#88BBDD;stroke-width:0.5;" width="129" x="471" y="283.7969" /><rect codeLine="78" fill="none" height="184.6719" id="VS" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="129" x="471" y="260" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="70" x="500.5" y="277.9951">ValueSet</text><line style="stroke:#505090;stroke-width:0.5;" x1="472" x2="599" y1="286.2969" y2="286.2969" /><line style="stroke:#505090;stroke-width:1.0;" x1="472" x2="599" y1="294.2969" y2="294.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="493" y="317.292">identifier 1..*</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="493" y="333.5889">owner 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="493" y="349.8857">status 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="493" y="366.1826">title 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="493" y="382.4795">description 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="91" x="493" y="398.7764">definition 1..*</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="501" y="415.0732">rule 0..*</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="501" y="431.3701">concept 0..*</text><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="486" y="311.4453" /><line style="stroke:#000000;stroke-width:1.0;" x1="479" x2="487" y1="312.4453" y2="312.4453" /><line style="stroke:#000000;stroke-width:1.0;" x1="479" x2="479" y1="304.2969" y2="312.4453" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="486" y="327.7422" /><line style="stroke:#000000;stroke-width:1.0;" x1="479" x2="487" y1="328.7422" y2="328.7422" /><line style="stroke:#000000;stroke-width:1.0;" x1="479" x2="479" y1="312.4453" y2="328.7422" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="486" y="344.0391" /><line style="stroke:#000000;stroke-width:1.0;" x1="479" x2="487" y1="345.0391" y2="345.0391" /><line style="stroke:#000000;stroke-width:1.0;" x1="479" x2="479" y1="328.7422" y2="345.0391" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="486" y="360.3359" /><line style="stroke:#000000;stroke-width:1.0;" x1="479" x2="487" y1="361.3359" y2="361.3359" /><line style="stroke:#000000;stroke-width:1.0;" x1="479" x2="479" y1="345.0391" y2="361.3359" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="486" y="376.6328" /><line style="stroke:#000000;stroke-width:1.0;" x1="479" x2="487" y1="377.6328" y2="377.6328" /><line style="stroke:#000000;stroke-width:1.0;" x1="479" x2="479" y1="361.3359" y2="377.6328" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="486" y="392.9297" /><line style="stroke:#000000;stroke-width:1.0;" x1="479" x2="487" y1="393.9297" y2="393.9297" /><line style="stroke:#000000;stroke-width:1.0;" x1="479" x2="479" y1="377.6328" y2="393.9297" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="494" y="409.2266" /><line style="stroke:#000000;stroke-width:1.0;" x1="487" x2="495" y1="410.2266" y2="410.2266" /><line style="stroke:#000000;stroke-width:1.0;" x1="487" x2="487" y1="393.9297" y2="410.2266" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="494" y="425.5234" /><line style="stroke:#000000;stroke-width:1.0;" x1="487" x2="495" y1="426.5234" y2="426.5234" /><line style="stroke:#000000;stroke-width:1.0;" x1="487" x2="487" y1="410.2266" y2="426.5234" /><line style="stroke:#505090;stroke-width:1.0;" x1="472" x2="599" y1="436.6719" y2="436.6719" /></g><!--class PR--><g id="elem_PR"><rect codeLine="92" fill="#C9FFC9" height="152.0781" id="PR" rx="2.5" ry="2.5" style="stroke:#2F4F4F;stroke-width:0.5;" width="141" x="7" y="530" /><rect fill="#77BB88" height="26.2969" rx="2.5" ry="2.5" style="stroke:#77BB88;stroke-width:0.5;" width="141" x="7" y="530" /><rect fill="#77BB88" height="2.5" style="stroke:#77BB88;stroke-width:0.5;" width="141" x="7" y="553.7969" /><rect codeLine="92" fill="none" height="152.0781" id="PR" rx="2.5" ry="2.5" style="stroke:#2F4F4F;stroke-width:0.5;" width="141" x="7" y="530" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="51" x="52" y="547.9951">Profile</text><line style="stroke:#2F4F4F;stroke-width:0.5;" x1="8" x2="147" y1="556.2969" y2="556.2969" /><line style="stroke:#2F4F4F;stroke-width:1.0;" x1="8" x2="147" y1="564.2969" y2="564.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="29" y="587.292">identifier 1..*</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="29" y="603.5889">status 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="29" y="619.8857">title 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="29" y="636.1826">description 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="29" y="652.4795">element 1..*</text><rect fill="#C9FFC9" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="22" y="581.4453" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="23" y1="582.4453" y2="582.4453" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="15" y1="574.2969" y2="582.4453" /><rect fill="#C9FFC9" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="22" y="597.7422" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="23" y1="598.7422" y2="598.7422" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="15" y1="582.4453" y2="598.7422" /><rect fill="#C9FFC9" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="22" y="614.0391" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="23" y1="615.0391" y2="615.0391" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="15" y1="598.7422" y2="615.0391" /><rect fill="#C9FFC9" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="22" y="630.3359" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="23" y1="631.3359" y2="631.3359" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="15" y1="615.0391" y2="631.3359" /><rect fill="#C9FFC9" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="22" y="646.6328" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="23" y1="647.6328" y2="647.6328" /><line style="stroke:#000000;stroke-width:1.0;" x1="15" x2="15" y1="631.3359" y2="647.6328" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="13" y="670.7764">&#160;</text><line style="stroke:#2F4F4F;stroke-width:1.0;" x1="8" x2="147" y1="674.0781" y2="674.0781" /></g><!--class CS--><g id="elem_CS"><rect codeLine="104" fill="#C2F0FF" height="152.0781" id="CS" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="129" x="590" y="15" /><rect fill="#88BBDD" height="26.2969" rx="2.5" ry="2.5" style="stroke:#88BBDD;stroke-width:0.5;" width="129" x="590" y="15" /><rect fill="#88BBDD" height="2.5" style="stroke:#88BBDD;stroke-width:0.5;" width="129" x="590" y="38.7969" /><rect codeLine="104" fill="none" height="152.0781" id="CS" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="129" x="590" y="15" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="99" x="605" y="32.9951">CodeSystem</text><line style="stroke:#505090;stroke-width:0.5;" x1="591" x2="718" y1="41.2969" y2="41.2969" /><line style="stroke:#505090;stroke-width:1.0;" x1="591" x2="718" y1="49.2969" y2="49.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="612" y="72.292">identifier 1..*</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="612" y="88.5889">owner 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="612" y="104.8857">status 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="612" y="121.1826">title 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="612" y="137.4795">description 1..1</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="612" y="153.7764">concept 1..*</text><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="605" y="66.4453" /><line style="stroke:#000000;stroke-width:1.0;" x1="598" x2="606" y1="67.4453" y2="67.4453" /><line style="stroke:#000000;stroke-width:1.0;" x1="598" x2="598" y1="59.2969" y2="67.4453" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="605" y="82.7422" /><line style="stroke:#000000;stroke-width:1.0;" x1="598" x2="606" y1="83.7422" y2="83.7422" /><line style="stroke:#000000;stroke-width:1.0;" x1="598" x2="598" y1="67.4453" y2="83.7422" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="605" y="99.0391" /><line style="stroke:#000000;stroke-width:1.0;" x1="598" x2="606" y1="100.0391" y2="100.0391" /><line style="stroke:#000000;stroke-width:1.0;" x1="598" x2="598" y1="83.7422" y2="100.0391" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="605" y="115.3359" /><line style="stroke:#000000;stroke-width:1.0;" x1="598" x2="606" y1="116.3359" y2="116.3359" /><line style="stroke:#000000;stroke-width:1.0;" x1="598" x2="598" y1="100.0391" y2="116.3359" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="605" y="131.6328" /><line style="stroke:#000000;stroke-width:1.0;" x1="598" x2="606" y1="132.6328" y2="132.6328" /><line style="stroke:#000000;stroke-width:1.0;" x1="598" x2="598" y1="116.3359" y2="132.6328" /><rect fill="#C2F0FF" height="2" style="stroke:#000000;stroke-width:1.0;" width="2" x="605" y="147.9297" /><line style="stroke:#000000;stroke-width:1.0;" x1="598" x2="606" y1="148.9297" y2="148.9297" /><line style="stroke:#000000;stroke-width:1.0;" x1="598" x2="598" y1="132.6328" y2="148.9297" /><line style="stroke:#505090;stroke-width:1.0;" x1="591" x2="718" y1="159.0781" y2="159.0781" /></g><!--link G to C--><g id="link_G_C"><path codeLine="117" d="M283.12,91 C309.33,91 340.28,91 367.49,91 " fill="none" id="G-C" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="48" x="301.25" y="84.0669">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g><!--link C to CS--><g id="link_C_CS"><path codeLine="118" d="M505.78,91 C532.71,91 563.38,91 589.85,91 " fill="none" id="C-CS" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="48" x="523.75" y="84.0669">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g><!--link VS to C--><g id="link_VS_C"><path codeLine="119" d="M500.48,259.69 C487.83,226.56 473.81,189.8 462.12,159.17 " fill="none" id="VS-C" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="48" x="486.5" y="218.0669">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g><!--link LM to EL--><g id="link_LM_EL"><path codeLine="120" d="M138.09,352.5 C163.99,352.5 194.6,352.5 222.33,352.5 " fill="none" id="LM-EL" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="48" x="156.25" y="345.5669">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g><!--link C to EL--><g id="link_C_EL"><path codeLine="121" d="M401.82,159.17 C387.24,187.4 369.98,220.83 353.97,251.83 " fill="none" id="C-EL" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="48" x="379.5" y="218.0669">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g><!--link EL to VS--><g id="link_EL_VS"><path codeLine="122" d="M382.69,352.5 C411.51,352.5 443.64,352.5 470.97,352.5 " fill="none" id="EL-VS" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="400.75" y="345.5669">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text></g><!--link LM to PR--><g id="link_LM_PR"><path codeLine="123" d="M77.5,420.57 C77.5,454.18 77.5,495.01 77.5,529.69 " fill="none" id="LM-PR" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="24" x="78.5" y="496.0669">&#160;&#160;&#160;&#160;&#160;&#160;</text></g></g></svg>
+</figure>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://Xt-EHR.eu">Xt-EHR</a>.  Package hl7.eu.fhir.xt-ehr.foundation#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Nov 29, 2024 12:12+0000">2024-11-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div id="container" style="color: #ffffff; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+  <div>
+    Links: 
+    <a style="color: #ffffff" href="toc.html">Table of Contents</a> |
+    <a style="color: #ffffff" href="qa.html">QA Report</a>
+    <a style="color: #ffffff" rel="license" href="http://hl7.org/fhir/R5/license.html">
+      <img style="border-style: none;" alt="CC0" src="cc0.png"/>
+    </a><br/>
+    The Xt-EHR action is co-funded by the European Union, EU4Health Program 2021-2027, under Grant Agreement Nr.º 101128085.
+  </div>
+  <div>
+    <img height="41" alt="a EU funded project" src="assets/images/eu.png"/>
+  </div>
+</div>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

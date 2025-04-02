@@ -1,0 +1,25 @@
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.xt-ehr.foundation.json	8502	-	0	0	0	0	0	0	3	77	0	0	0	0	0	0	0	1	0	0	64	76	0	0	0	2	0	1
+fsh-generated/resources/CodeSystem-Glossary.json	694	15	0	0	1	0	0	0	0	16	0	0	1	0	0	0	0	0	0	0	13	1492	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-AD.json	698	13	0	6	0	0	1	0	0	41	0	0	0	0	0	0	0	0	0	0	26	405	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-ANY.json	892	14	0	12	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	25	96	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-BL.json	697	10	0	8	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	24	74	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-CD.json	665	10	0	12	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	25	66	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-Class.json	640	10	0	9	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	36	79	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-DT.json	562	2	0	8	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	29	58	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-EHDSData.json	1786	2	0	7	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	35	59	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-EHDSDocument.json	8776	9	0	30	0	0	0	0	0	23	0	0	0	0	0	0	0	1	0	0	114	187	0	0	0	9	0	1
+fsh-generated/resources/StructureDefinition-EHDSHealthProfessional.json	4902	4	0	10	1	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	43	83	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-EHDSOrganization.json	3961	5	0	8	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	40	76	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-EHDSPatient.json	5789	5	0	10	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	55	122	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-EHDSStructuredData.json	4397	5	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	46	85	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-EN.json	703	4	0	9	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	24	49	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-INT.json	770	3	0	7	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	23	47	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-InstanceIdentifier.json	838	2	0	7	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	22	45	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-PQ.json	864	3	0	8	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	30	50	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-QT.json	574	3	0	8	0	0	0	0	0	5	0	0	0	0	0	0	0	1	0	0	26	47	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-REAL.json	809	3	0	7	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	24	47	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-RTO.json	674	3	0	12	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	23	46	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-ST.json	575	3	0	12	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	20	44	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-TS.json	694	4	0	13	1	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	19	45	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-Untyped.json	690	3	0	13	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	26	47	0	0	0	0	0	0
