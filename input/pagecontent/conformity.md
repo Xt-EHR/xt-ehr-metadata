@@ -14,11 +14,6 @@ Maturity of a particular EHR system represents required minimal level of conform
 | Level 3 |Highest maturity level - Information is provided in fully structured form as in the Level 2, coded information can be provided where required. Corresponds to CDA L3. |
 
 
-TO DO
-
-<br>
-
-
 ### Conformance Framework
 To enable assessment of the conformity, the Conformance Framework allows capturing the required/expected as well as the actual capabilities of EHR systems. This framework allows conformity rules to be stated on a detailed level for data sets [Article 15, 1.1] of the priority categories [Article 14] of EHDS.
 
@@ -45,16 +40,25 @@ Operations performed on data elements. The operations have been selected from th
 
 ##### Mapping between EHDS verbs and Data operations (HL7 Obligation) concepts.
 
-> TODO: confirm the mappings
+EHDS regulation includes definitons of the EHR systems and required functionalities usign several different terms. In this chapter we tried to map those terms into applicable HL7 FHIR obligations, that are used as a basis for the Conformity model.
+
+Acording to the regulation the EHR system is defined as “… any system where the appliance or software allows to **store**, **intermediate**, **export**, **import**, **convert**, **edit** or **view** personal electronic health data that belongs to the priority categories of personal electronic health data”
 
 | EHDS Term | EN ISO/HL7 10781​ | HL7 Obligation Code |
 | --- | --- | --- |
-| Issue, enter, insert, register​ | Capture, Maintain​ | able-to-populate, persist​ |
-| Issue, enable access​ | Transmit​ | send​ |
-| Accept, receive​ | Receive​, Import | process​ |
-| Accept, provide access​ | Render, Present​ | process, display​ |
-| Download​ | Export​ | process |
-| Accept (+ insert?)​ | Import​ | process, persist(?) |
+| store | store | persist |
+| intermediate | exchange | no-alter |
+| export | | process |
+| import | | process |
+| convert | | process, able-to-populate |
+| edit | | able-to-populate, populate-if-known |
+| view | | display |
+| issue, enter, insert, register​ | capture, maintain​ | able-to-populate, persist​ |
+| issue, enable access​ | transmit​ | send​ |
+| accept, receive​ | receive​, Import | process​ |
+| accept, provide access​ | render, present​ | process, display​ |
+| download​ | export​ | process |
+| accept​ | import​ | process, persist |
 
 #### Data elements
 
