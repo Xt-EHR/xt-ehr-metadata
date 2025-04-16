@@ -91,15 +91,22 @@ For Xt-EHR we have opted to use the words "SHALL" and "SHOULD".
 
 A conformity framework rule for a required level of conformity of the logical model and/or implementation specification is the combination of a data element, a data operation, and a requirement strength, e.g.:
 
-| System functional profile | Data element | Data operation | Requirement strength | Comment |
+| System function | Data element | Data operation | Requirement strength | Comment |
 | --- | --- | --- | --- | --- |
-| Prescription function | Prescription.identifier | able-to-populate | SHALL | An EHR system with a prescription function SHALL be able to populate the prescription identifier. |
-| Test result producer function | observation.code | able-to-populate | SHALL | An EHR system with a test result producer function SHALL be able to populate the observation test code. |
-| Test result producer function | observation.value | able-to-populate | SHALL | An EHR system with a test result producer function SHALL be able to populate the observation test result value. |
-| Test result consumer function | observation.name | display | SHALL | An EHR system with a test result consumer function SHALL be able to populate the observation test name. |
-| Test result consumer function | observation.value | display | SHALL | An EHR system with a test result consumer function SHALL be able to populate the observation result value. |
-| Test result consumer function | observation.value.unit | display | SHALL | An EHR system with a test result consumer function SHALL be able to populate the observation result value unit. |
-| ... | ... |  ... |  ... |
+| Prescription function | Prescription.identifier | able-to-populate | SHALL | A prescriber using an EHR system SHALL be able to populate the prescription identifier. |
+| Dispense function | Prescription.identifier | process | SHALL | An EHR system with a prescription function SHALL be able to populate the prescription identifier. |
+| ... | ... |  ... |  ... | ... |
+
+
+
+| System function | Data element | Data operation | Requirement strength | Comment |
+| --- | --- | --- | --- | --- |
+| Test result producer | observation.code | able-to-populate | SHALL | An EHR system with a test result producer function SHALL be able to populate the observation test code. |
+| Test result producer | observation.value | able-to-populate | SHALL | An EHR system with a test result producer function SHALL be able to populate the observation test result value. |
+| Test result consumer | observation.name | display | SHALL | An EHR system with a test result consumer function SHALL be able to populate the observation test name. |
+| Test result consumer | observation.value | display | SHALL | An EHR system with a test result consumer function SHALL be able to populate the observation result value. |
+| Test result consumer | observation.value.unit | display | SHALL | An EHR system with a test result consumer function SHALL be able to populate the observation result value unit. |
+| ... | ... |  ... |  ... | ... |
 
 ##### Rules and cardinality
 Rules specify obligations to perform certain operation. This represent a different requirement than cardinality, however there is a logical link between the two in most cases. .....
