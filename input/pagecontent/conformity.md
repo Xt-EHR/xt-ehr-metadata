@@ -89,7 +89,7 @@ For Xt-EHR we have opted to use the words "SHALL" and "SHOULD".
 
 #### Conformity rules
 
-A conformity framework rule for a required level of conformity of the logical model and/or implementation specification is the combination of a data element, a data operation, and a requirement strength, e.g.:
+A conformity framework rule for a required level of conformity of the logical model and/or implementation specification is the combination of a system mfunction, a data element, a data operation, and a requirement strength, e.g.:
 
 | System function | Data element | Data operation | Requirement strength | Comment |
 | --- | --- | --- | --- | --- |
