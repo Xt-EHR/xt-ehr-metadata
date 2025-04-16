@@ -1,0 +1,19 @@
+{
+  "url" : "https://www.xt-ehr.eu/specifications/fhir/ImplementationGuide/hl7.eu.fhir.xt-ehr.foundation",
+  "name" : "XtEHRMetadata",
+  "title" : "Xt-EHR Metadata Standards",
+  "description" : "Requirements and standards for metadata in the Xt-EHR project",
+  "status" : "draft",
+  "package-id" : "hl7.eu.fhir.xt-ehr.foundation",
+  "ig-ver" : "0.1.0",
+  "date" : "Wed, 16 Apr, 2025 15:23:07 +0000",
+  "dateISO8601" : "2025-04-16T15:23:07+00:00",
+  "errs" : 0,
+  "warnings" : 19,
+  "hints" : 0,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "5.0.0",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1148659064
+}

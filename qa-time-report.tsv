@@ -1,0 +1,18 @@
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.xt-ehr.foundation.json	6650	-	0	0	0	0	0	0	5	78	0	0	0	0	0	0	0	1	0	0	55	51	0	1	0	3	0	1
+fsh-generated/resources/StructureDefinition-AD.json	698	18	0	8	1	0	0	0	0	38	0	0	0	0	0	0	0	0	0	0	25	408	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-ANY.json	892	14	0	10	0	0	0	0	0	15	0	0	0	0	0	0	0	0	0	0	28	122	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-BL.json	697	14	0	13	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	24	95	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-CD.json	665	15	0	12	0	0	0	0	0	7	0	0	0	0	0	0	0	1	0	0	21	88	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-Class.json	640	14	0	13	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	26	119	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-DT.json	562	18	0	13	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	20	83	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-EN.json	703	8	0	13	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	20	73	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-INT.json	770	3	0	13	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	21	66	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-InstanceIdentifier.json	838	4	0	13	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	21	61	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-PQ.json	864	4	0	12	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	24	61	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-QT.json	574	5	0	11	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	33	52	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-REAL.json	809	4	0	12	0	0	0	0	0	7	0	0	0	0	0	0	0	1	0	0	28	51	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-RTO.json	674	4	0	12	1	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	26	51	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-ST.json	575	4	0	12	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	23	50	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-TS.json	694	5	0	12	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	20	54	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-Untyped.json	690	4	0	13	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	21	49	0	0	0	1	0	0

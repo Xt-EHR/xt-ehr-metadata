@@ -1,0 +1,37 @@
+XtEHRMetadata
+=========================================
+
+Generic: line 0, col 0, Warning - The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
+/github/workspace/fsh-generated/resources/CodeSystem-Glossary.json: line 0, col 0, Info - CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/CodeSystem-Glossary.json: line 1, col 1721, Warning - Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present (REQUIRED)
+/github/workspace/fsh-generated/resources/CodeSystem-Glossary.json: line 1, col 1721, Warning - Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present (REQUIRED)
+/github/workspace/fsh-generated/resources/StructureDefinition-AD.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this data type profile (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-ANY.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this data type profile (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-BL.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this data type profile (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-CD.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this data type profile (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-Class.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this data type profile (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-DT.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this data type profile (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-EHDSDocument.json: line 1, col 43132, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-EHDSDocument.json: line 1, col 43555, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-EHDSDocument.json: line 1, col 44453, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-EHDSStructuredData.json: line 1, col 22781, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-EHDSStructuredData.json: line 1, col 23216, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-EHDSStructuredData.json: line 1, col 24150, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-EHDSStructuredData.json: line 1, col 25450, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-EHDSStructuredData.json: line 1, col 25812, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-EHDSStructuredData.json: line 1, col 26543, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-EN.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this data type profile (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-INT.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this data type profile (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-InstanceIdentifier.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this data type profile (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-PQ.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this data type profile (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-QT.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this data type profile (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-REAL.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this data type profile (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-RTO.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this data type profile (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-ST.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this data type profile (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-TS.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this data type profile (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/StructureDefinition-Untyped.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this data type profile (BUSINESSRULE)
+
+err = 0, warn = 30, info = 1
+IG Publisher Version: 1.8.22
