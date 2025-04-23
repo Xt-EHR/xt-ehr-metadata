@@ -1,4 +1,4 @@
-id: hl7.eu.fhir.xt-ehr.foundation
+id: eu.ehds.metadata
 canonical: https://www.xt-ehr.eu/specifications/fhir
 name: Xt-EHRMetadata
 title: Xt-EHR Metadata Standards
