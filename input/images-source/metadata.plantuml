@@ -64,10 +64,10 @@ class "**Data Model**" as LM<<TM>> {
 class "**Element**" as EL<<TM>> {
   |_ name 1..1
   |_ definition 1..1
+  |_ cardinality 0..1
   |_ type 1..1
   |_ valueDomain 0..*
-  |_ comment 0..1
-  |_ cardinality 0..1
+  |_ source 0..1
   |_ mapping 0..*
     |_ targetConcept 1..1  
     |_ relationship 0..1    
@@ -97,7 +97,15 @@ class "**Code System**" as CS<<TM>> {
 }
 
 Package "Technical Specifications     " as Profiles {
-class "**Profile**" as PR<<MD>> {
+class "**FHIR Document/Profile**" as PR<<MD>> {
+  |_ identifier 1..*   
+  |_ status 1..1
+  |_ title 1..1
+  |_ description 1..1   
+  |_ element 1..*
+}
+
+class "**CDA Document**" as CDA<<MD>> {
   |_ identifier 1..*   
   |_ status 1..1
   |_ title 1..1
@@ -117,9 +125,13 @@ C <-d- EL:  "   mapped to   "
 LM -r- EL:  "            "  
 EL-r- VS: "             "
 VS -r- CS: "        "
-LM-d- PR: "      "
+LM <|-d- PR: "      "
+LM <|-- CDA: "                      "
 
 LM -u[hidden]- G: "      "
+
+PR -r[hidden]- CDA
+EL -d[hidden]- CDA
 
 
 glossary -d[hidden]- term
