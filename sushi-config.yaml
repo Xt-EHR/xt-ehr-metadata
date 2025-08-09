@@ -1,4 +1,4 @@
-id: eu.ehds.metadata
+id: hl7.eu.fhir.xt-ehr.metadata
 canonical: https://www.xt-ehr.eu/specifications/fhir
 name: Xt-EHRMetadata
 title: Xt-EHR Metadata Standards
@@ -222,3 +222,4 @@ menu:
 #   if InstanceOf references a profile:
 #
 #   setId: always # always | standalone-only
+
