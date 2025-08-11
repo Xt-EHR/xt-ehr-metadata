@@ -1,93 +1,413 @@
 @startuml
-skinparam linetype polyline
+skinparam linetype ortho
 hide circle
 hide stereotype
 hide methods
 
 
-package "Metadata" {
+package "Common Metadata" {
 
-class "**EHDSData**" as EHDSData {
-  |_ identifier 0..*
-  |_ subject 1..1   
-  |_ origin 0..1   
-  |_ language 0..1    
-}
+class "**EHDSDataSet**" as EHDSData {
+  |_ metadata 0..*
+    |_ identifier 0..*
+    |_ subject 1..1   
+    |_ relatedPerson 0..* ?
+  '  |_ origin 0..1   
+    |_ authorship 1..*   
+      |_ author 1..1   
+      |_ datetime 1..1   
+    |_ lastUpdate 0..1   
+    |_ status 1..1   
+    |_ statusReason 0..1
+    |_ version 0..1   
+    |_ language 0..1    
+  |_ presentedForm 0..*     
+'    |_ type 1..1   
+'    |_ content 1..1    
+  }
 
-class "**EHDSStructuredData**" as EHDSStructuredData {
-  |_ subject 1..1   
-  |_ authorship 1..*   
-    |_ author 1..1   
-    |_ datetime 1..1   
-  |_ lastUpdate 0..1   
-  |_ status 1..1   
-  |_ version 0..1   
-}
+'    class "UnstructuredContent" as EHDSUnStructuredContent #DDC8B8 {
+'    }
+'    EHDSData <|-r- EHDSUnStructuredContent: "                "
 
-    class "UnstructuredContent" as EHDSUnStructuredContent #DDC8B8 {
-    }
 
-    EHDSData <|-- EHDSStructuredData
-    EHDSData <|-r- EHDSUnStructuredContent: "                "
-}
 
-package "Commons" {
-    class "Prescription" as Prescription #ddf {
-    }
-
-    class "Report" as Report #efc {
-    }
-
-    class "Patient Summary" as PatientSummary #ffe {
-    }
-
-    class "Discharge Report" as DischargeReport #eed {
-    }
-
-    class "Lab Report" as LabReport #dfe {
-    }
-
-    class "Imaging Report" as ImagingReport #cfe {
-    }
-
-    Report <|-- LabReport
-    Report <|-- ImagingReport
-}
-
-class "RESTful exchange" as RESTfulExchange #eff {
-}
+'class "Simple exchange" as RESTfulExchange #eff {
+'}
 
 
 class "**EHDSDocument**" as EHDSDocument #efe {
-  |_ identifier 1..*   
-  |_ documentType 1..1   
-  |_ eventType 0..*   
-  |_ documentTitle 1..1   
-  |_ documentStatus 1..1   
-  |_ period 0..1   
-  |_ issuedDateTime 1..1   
-  |_ attestation 0..*   
-    |_ attester 1..1   
-    |_ datetime 1..1   
-  |_ legalAuthentication 0..1   
-    |_ legalAuthenticator 1..1   
-    |_ datetime 1..1   
-  |_ authorSpecialty 0..*   
-  |_ custodian 1..1   
-  |_ documentFormat 0..1   
-  |_ knowledgeResources 0..*   
-    |_ externalReference 0..*   
-    |_ relatedTo 0..*   
+  |_ metadata 0..*
+    |_ identifier <b>1..*
+    |_ <b>documentType 1..1
+    |_ <b>eventType 0..*   
+    |_ <b>documentTitle 1..1   
+    |_ documentStatus 1..1  ?
+    |_ <b>period 0..1   
+    |_ <b>attestation 0..*   
+      |_ <b>attester 1..1   
+      |_ <b>datetime 1..1   
+    |_ <b>legalAuthentication 0..1   
+      |_ <b>legalAuthenticator 1..1   
+      |_ <b>datetime 1..1   
+    |_ authorship 1..*   
+      |_ <b>authorSpecialty 0..*   
+    |_ <b>custodian 1..1   
+    |_ <b>documentFormat 0..1   
+    |_ confidentiality 0..1 ? 
+  |_ <b>knowledgeResources 0..*   
+    |_ <b>externalReference 0..*   
+    |_ <b>relatedTo 0..*   
 }
 
-EHDSStructuredData <|-- RESTfulExchange
+}
 
-EHDSStructuredData <|-- EHDSDocument
 
-EHDSDocument <|-- Prescription
-EHDSDocument <|-- Report
-EHDSDocument <|-- PatientSummary
-EHDSDocument <|-- DischargeReport
+
+
+
+'package "Specialised content models" {
+'    class "Prescription" as Prescription #ddf {
+'  |_ statusReason[x] 0..1  
+'  |_ recorder 0..1   
+'  |_ recordingDate 0..1 ??
+'  |_ validFrom 0..1   
+'  |_ validUntil 0..1   
+'--
+'  |_ comment 0..*   
+'  |_ prescriptionItem 1..*   
+'    |_ identifier 0..1   
+'    |_ medication 1..1   
+'    |_ indication[x] 0..*   
+'    |_ indicationText 0..1   
+'    |_ prescriptionIntent 0..1   
+'    |_ treatmentPeriod 0..1   
+'    |_ quantityPrescribed 0..1   
+'    |_ dosageInstructions 0..*   
+'    |_ preparationInstructions 0..1   
+'    |_ substitution 0..1   
+'      |_ allowed[x] 0..1   
+'      |_ reason[x] 0..1   
+'    |_ status 1..1   
+'    |_ statusReason[x] 0..1   
+'    |_ repeatsAllowed 0..1   
+'    |_ minimumDispenseInterval 0..1   
+'    |_ offLabel 0..1   
+'      |_ isOffLabelUse 1..1   
+'      |_ reason[x] 0..*   
+'    |_ comment 0..*   
+'}
+
+
+'class "**EHDSMedicationDispense**" as EHDSMedicationDispense {
+'  |_ status 
+'  |_ statusReason[x]
+'--
+'  |_ dispenseLocation 0..1   
+'  |_ receiver[x] 0..1   
+'  |_ relatedRequest 0..*   
+'  |_ medication 1..1   
+'  |_ dispensedQuantity 1..1   
+'  |_ timeOfDispensation 1..1   
+'  |_ substitution 0..1   
+'    |_ substitutionOccurred 1..1   
+'    |_ type 0..1   
+'    |_ reason 0..*   
+'  |_ dosageInstructions 0..*   
+'  |_ comment 0..*   
+'}
+
+
+  '   class "Report" as Report #efc {
+  ' |_ <b>healthInsuranceAndPaymentInformation 0..1   
+  '   |_ healthInsuranceCode 0..1   
+  '   |_ healthInsuranceName 0..1   
+  '   |_ healthInsuranceNumber 0..1   
+  ' |_ intendedRecipient[x] 0..*   ??
+  ' |_ documentMetadata 1..1   ??
+  '   |_ reportDateAndTime 1..1   ??
+  '   |_ <b>specialty 0..*   
+  '   |_ media 0..*   
+
+  '   }
+
+'    class "**Patient Summary**" as PatientSummary #ffe {
+'|_ relatedPerson 0..*
+'|_ preferredHealthProfessional 0..*
+' |_ documentMetadata 1..1   
+'  |_ --documentId 1..1--   
+'  |_ --documentType 1..1   --
+'  |_ --documentStatus 1..1--   
+'  |_ --period 0..1--   
+'  |_ reportDateAndTime 1..1 
+'  |_ --documentTitle 1..1--   
+'  |_ --reportCustodian 1..1--   
+'  |_ --documentFormat 0..1   --
+'  |_ --confidentiality 0..1--   
+'  |_ --language 0..1--  
+'  |_ --version 0..1--  
+'  |_ dateOfLastUpdate 0..1  
+'  |_ natureOfTheDocument 1..1 
+'--
+'  |_ alerts 1..1   
+'    |_ sectionNarative 0..1   
+'    |_ allergy 1..*   
+'    |_ medicalAlert 0..*   
+'  |_ medicalHistory 1..1   
+'    |_ sectionNarative 0..1   
+'    |_ vaccinationSection 0..1   
+'      |_ subsectionNarative 0..1   
+'      |_ vaccination 0..*   
+'    |_ pastProblemsSection 0..1   
+'      |_ subsectionNarative 0..1   
+'      |_ pastProblems 0..*   
+'    |_ medicalHistorySection 0..1   
+'      |_ medicalHistory 0..*   
+'  |_ medicalProblems 1..1   
+'    |_ sectionNarative 0..1   
+'    |_ currentProblemsSection 0..1   
+'      |_ subsectionNarative 0..1   
+'      |_ currentProblems 1..*   
+'    |_ medicalDevicesAndImplantsSection 0..1   
+'      |_ subsectionNarative 0..1   
+'      |_ medicalDevicesAndImplants 1..*   
+'    |_ proceduresSection 0..1   
+'      |_ subsectionNarative 0..1   
+'      |_ procedures 1..*   
+'    |_ functionalStatusSection 0..1   
+'      |_ subsectionNarative 0..1   
+'      |_ functionalStatusAssessment 0..*   
+'  |_ medicationSummary 1..1   
+'    |_ sectionNarative 0..1   
+'    |_ currentAndRelevantPastMedicines 1..*   
+'  |_ socialHistory 0..1   
+'    |_ socialHistoryDescription 1..1   
+'    |_ socialHistoryObservationsRelatedToHealth 0..*   
+'      |_ referenceDateRange 0..*   
+'  |_ pregnancyHistory 0..1   
+'    |_ sectionNarative 0..1   
+'    |_ currentPregnancyStatus 0..1   
+'      |_ dateOfObservation 0..*   
+'      |_ status 0..*   
+'      |_ expectedDateOfDelivery 0..1   
+'    |_ historyOfPreviousPregnancies 0..1   
+'      |_ previousPregnanciesStatus 0..1   
+'      |_ previousPregnanciesDescription 0..*   
+'        |_ outcomeDate 0..1   
+'        |_ outcome 0..1   
+'        |_ numberOfChildren 0..1   
+'  |_ patientProvidedData 0..1   
+'    |_ sectionNarative 0..1   
+'    |_ travelHistory 0..*   
+'      |_ country 0..1   
+'      |_ period 0..*   
+'    |_ advanceDirective 0..1   
+'      |_ documentation 0..*   
+'  |_ results 0..1   
+'    |_ sectionNarative 0..1   
+'    |_ resultObservation[x] 0..*   
+'  |_ planOfCare 0..1   
+'    |_ description 0..1   
+'    |_ planOfCareEntry 0..*   
+'}
+
+
+'    class "Discharge Report" as DischargeReport #eed {
+'  |_ --subject 1..1--   
+'  |_ relatedPerson 0..*   
+'  |_ preferredHealthProfessional[x] 0..*   
+'|_ documentMetadata 1..1   
+'  |_ healthInsuranceAndPaymentInformation 0..*   
+'  |_ intendedRecipient 0..*   
+'  |_ --authorship 1..*--   
+'    |_ --author 1..1--   
+'    |_ --datetime 1..1 --  
+'  |_ --attestation 0..*  -- 
+'    |_ --attester 1..1 --  
+'    |_ --datetime 1..1  -- 
+'  |_ --legalAuthentication 0..1 --  
+'    |_ --legalAuthenticator 1..1--   
+'    |_ --datetime 1..1 --  
+'  |_ documentMetadata 1..1   
+'    |_ --documentId 1..1   --
+'    |_ --documentType 1..1   --
+'    |_ --documentStatus 1..1   --
+'    |_ --period 0..1   --
+'    |_ --reportDateAndTime 1..1--   
+'    |_ --documentTitle 1..1   --
+'  |_ eventType 0..*   
+'  |_ specialty 0..* 
+'    |_ --reportCustodian 1..1 --  
+'    |_ --documentFormat 0..1--   
+'    |_ --confidentiality 0..1  -- 
+'    |_ --language 0..1 --  
+'    |_-- version 0..1 --  
+'  |_ --knowledgeResources 0..* --  
+'    |_ --externalReference 0..* --  
+'    |_ --relatedWith 0..* --      
+'--
+'  |_ advanceDirectives 0..1   
+'    |_ livingWill 0..*   
+'    |_ dateAndTime 1..1   
+'    |_ type 1..1   
+'    |_ comment 0..1   
+'    |_ relatedConditions 0..*   
+'    |_ livingWillDocument 1..*   
+'  |_ alertsSection 1..1   
+'    |_ sectionNarative 0..1   
+'    |_ allergyAndIntolerance 1..*   
+'    |_ medicalAlerts 0..*   
+'  |_ encounterInformationSection 1..1   
+'    |_ sectionNarative 1..1   
+'    |_ encounterInformationSection 0..1   
+'  |_ admissionEvaluation 0..1   
+'    |_ sectionNarative 0..1   
+'    |_ objectiveFindings 0..1   
+'      |_ dateAndTime 0..1   
+'      |_ performer 0..*   
+'      |_ sectionNarative 0..1   
+'      |_ anthropometricObsevations 0..*   
+'      |_ vitalSigns 0..*   
+'      |_ physicalExamination 0..*   
+'    |_ functionalStatus 0..1   
+'      |_ dateAndTime 0..1   
+'      |_ performer 0..*   
+'      |_ sectionNarative 0..1   
+'      |_ functionalStatusAssessment 0..*   
+'  |_ patientHistory 0..1   
+'    |_ sectionNarative 0..1   
+'    |_ medicalHistory 1..1   
+'      |_ sectionNarative 0..1   
+'      |_ pastProblems 1..*   
+'}
+'    class "**Lab Report**" as LabReport #dfe {
+'  |_ healthInsuranceAndPaymentInformation 0..1   
+'    |_ healthInsuranceCode 0..1   
+'    |_ healthInsuranceName 0..1   
+'    |_ healthInsuranceNumber 0..1   
+'  |_ intendedRecipient[x] 0..*   ??
+'  |_ documentMetadata 1..1   ??
+'    |_ reportDateAndTime 1..1   ??
+'    |_ specialty 0..*   
+'    |_ media 0..*   
+'--
+'  |_ orderInformation 0..*   
+'    |_ clinicalQuestion 0..1
+'  |_ supportingInformation 0..*   
+'    |_ observation 0..*   
+'    |_ condition 0..*   
+'    |_ medicationAdministration 0..*   
+'    |_ sexForClinicalUse 0..*
+'    |_ otherSupportingInformation 0..*   
+'    |_ pregnancystatus
+'  |_ specimen 0..*   
+''  |_ --serviceRequest 0..*--
+'  |_ resultData 1..1   
+'    |_ narrativeReport 0..1   
+'    |_ commentsInterpretationAndRecommendations 0..*   
+'    |_ laboratoryTestResults 0..*         
+'    }''
+
+'    class "**Imaging Report**" as ImagingReport #cfe {
+'  |_ healthInsuranceAndPaymentInformation 0..1   
+'    |_ healthInsuranceCode 0..1   
+'    |_ healthInsuranceName 0..1   
+'    |_ healthInsuranceNumber 0..1   
+'  |_ intendedRecipient[x] 0..*   ??
+'  |_ documentMetadata 1..1   ??
+'    |_ reportDateAndTime 1..1   ??
+'    |_ specialty 0..*   
+'    |_ media 0..*   
+'--
+'  |_ specimen 0..*   
+'  |_ serviceRequest 0..*   
+'  |_ exposureInformation 0..1   
+'    |_ effectiveDose 0..*   
+'    |_ equivalentDoseInformation 1..1   
+'      |_ equivalentDose 1..1   
+'      |_ tissueType 1..1   
+'  |_ examinationReport 1..1   
+'    |_ modality 1..*   
+'    |_ bodyPart 0..*   
+'      |_ bodyLocation 0..1   
+'      |_ laterality 0..1   
+'    |_ imagingProcedures 0..*   
+'    |_ medication 0..*   
+'    |_ adverseReaction 0..*   
+'    |_ resultData 0..1   
+'      |_ resultText 1..1   
+'      |_ observationResults 0..*   
+'    |_ conclusion 1..1   
+'      |_ impression 1..1   
+'      |_ codedConclusion 0..1   
+'        |_ condition 0..*   
+'  |_ recommendation 0..1   
+'    |_ description 1..1   
+'    |_ carePlan 0..*   
+'  |_ comparisonStudy 0..*   
+'    }
+
+
+'    EHDSDocument <|-- LabReport
+'    EHDSDocument <|-- ImagingReport
+'}
+
+
+EHDSData <|-r- EHDSDocument: "              Specialises                   "
+
+''EHDSData <|-- RESTfulExchange
+''RESTfulExchange <|-- Prescription'
+
+'EHDSData <|-- Prescription
+'EHDSData <|-- EHDSMedicationDispense
+
+'EHDSDocument <|-- Report
+'EHDSDocument <|-- PatientSummary
+'EHDSDocument <|-- DischargeReport
+
+
+
+
+'*
+
+' class "**OrderInformation**" as OrderInformation {
+'     |_ orderId 1..*   
+'     |_ orderDateAndTime 0..1   
+'     |_ orderPlacer 0..1   
+'     |_ orderReasonText 0..*   
+'     |_ orderReason 0..*   
+'     |_ clinicalQuestion 0..1   
+'     |_ supportingInformation 0..*   
+'       |_ observation 0..*   
+'       |_ condition 0..*   
+'       |_ medicationAdministration 0..*   
+'       |_ devices 0..*   
+'       |_ pregnancyStatus 0..1   
+'       |_ gestationalAge 0..1   
+'       |_ sexForClinicalUse 0..*   
+'       |_ otherSupportingInformation 0..*     
+'   }
+
+
+' class "**ContentMetadata**" as ContentMetadata {
+'   |_ subject 1..1   
+'   |_ healthInsuranceAndPaymentInformation 0..1   
+'     |_ healthInsuranceCode 0..1   
+'     |_ healthInsuranceName 0..1   
+'     |_ healthInsuranceNumber 0..1   
+'   |_ intendedRecipient 0..*   
+'   |_ authorship 1..*   
+'     |_ author 1..1   
+'     |_ datetime 1..1   
+'   |_ attestation 0..*   
+'     |_ attester 1..1   
+'     |_ datetime 1..1   
+'   |_ legalAuthentication 0..1   
+'     |_ legalAuthenticator 1..1   
+'     |_ datetime 1..1   
+' }
+
+
 
 
 
