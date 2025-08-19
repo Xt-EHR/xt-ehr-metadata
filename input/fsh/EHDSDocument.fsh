@@ -4,8 +4,11 @@ Id: EHDSDocument
 Title: "Common model for EHDS document exchange"
 Description: "Common header elements for all EHDS document exchange."
 Characteristics: #can-be-target
-* identifier
-  * ^min = 1
+
+
+* metadata 
+  * identifier
+    * ^min = 1
 
 * documentType 1..1 CodeableConcept "Document type" """Identifies the type of document at hand, e.g. Hospital discharge report."""
   * ^binding.description = "LOINC"
@@ -17,13 +20,13 @@ Characteristics: #can-be-target
   * ^binding.strength = #preferred
 
 * documentTitle 1..1 string "Document title" """Document title, such as Hospital Discharge Report, Laboratory Result Report, etc."""
-* documentStatus 1..1 CodeableConcept "Document status" """The status of the Hospital discharge report. E.g., preliminary, final."""
-  * ^binding.description = "hl7:CompositionStatus"
-  * ^binding.strength = #preferred
+//* documentStatus 1..1 CodeableConcept "Document status" """The status of the Hospital discharge report. E.g., preliminary, final."""
+//  * ^binding.description = "hl7:CompositionStatus"
+//  * ^binding.strength = #preferred
 * period 0..1 Period "Period" """Time of service that is being documented"""
 // * reportDateTime 1..1 dateTime "Report date and time" """Date and time of the report creation."""
 //replaced by issuedDateTime
-* issuedDateTime 1..1 dateTime "Report date and time" """Date and time of the report creation."""
+//* issuedDateTime 1..1 dateTime "Report date and time" """Date and time of the report creation."""
 
 * attestation 0..* Base "Attestation" """Document attestation details"""
   * attester 1..1 EHDSHealthProfessional "Attester" """Attester who validated the document. Mulitple attesters could be provided."""
