@@ -165,6 +165,25 @@ menu:
 #   Patient/bad-example: omit
 #
 #
+
+groups:
+  CommonMetadata:
+    name: Core metadata
+    description: Core metadata Models.
+    resources:
+      - StructureDefinition/EHDSDataSet
+      - StructureDefinition/EHDSDocument
+
+  Types:
+    name: Data Types
+    description: Data types and structures used in the core metadata.
+    resources:
+      - StructureDefinition/EHDSHealthProfessional
+      - StructureDefinition/EHDSOrganization
+      - StructureDefinition/EHDSPerson
+
+
+
 # Groups can control certain aspects of the IG generation.  The IG
 # documentation recommends that authors use the default groups that
 # are provided by the templating framework, but if authors want to

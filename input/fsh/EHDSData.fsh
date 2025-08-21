@@ -1,7 +1,7 @@
 Logical: EHDSDataSet
 Id: EHDSDataSet
-Title: "Common model for EHDS data exchange"
-Description: "Common header elements for all EHDS data exchange."
+Title: "EHDS data exchange"
+Description: "Common elements for all EHDS data exchange."
 
 * identifier 0..* Identifier "Document ID" """Unique identifier of the data object"""
 * subject 0..1 EHDSPerson "Subject" """Patient/subject information"""

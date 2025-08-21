@@ -1,8 +1,8 @@
 Logical: EHDSDocument
 Parent: EHDSDataSet
 Id: EHDSDocument
-Title: "Common model for EHDS document exchange"
-Description: "Common header elements for all EHDS document exchange."
+Title: "EHDS document"
+Description: "Common elements for all EHDS document exchange."
 Characteristics: #can-be-target
 * identifier
   * ^min = 1
