@@ -1,0 +1,33 @@
+XtEHRMetadata
+=========================================
+
+Generic: line 0, col 0, Warning - The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
+/work/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.xt-ehr.metadata.json: line 1, col 6443, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.xt-ehr.metadata.json: line 1, col 6558, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.xt-ehr.metadata.json: line 1, col 6669, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.xt-ehr.metadata.json: line 1, col 6782, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.xt-ehr.metadata.json: line 1, col 6891, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.xt-ehr.metadata.json: line 1, col 7004, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.xt-ehr.metadata.json: line 1, col 7115, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.xt-ehr.metadata.json: line 1, col 7227, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.xt-ehr.metadata.json: line 1, col 7340, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.xt-ehr.metadata.json: line 1, col 7447, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.xt-ehr.metadata.json: line 1, col 7557, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.xt-ehr.metadata.json: line 1, col 7667, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.xt-ehr.metadata.json: line 1, col 7784, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.xt-ehr.metadata.json: line 1, col 7893, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.xt-ehr.metadata.json: line 1, col 8571, Info - Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0 (BUSINESSRULE)
+/work/fsh-generated/resources/StructureDefinition-EHDSDocument.json: line 1, col 46544, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/work/fsh-generated/resources/StructureDefinition-EHDSDocument.json: line 1, col 46967, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/work/fsh-generated/resources/StructureDefinition-EHDSDocument.json: line 1, col 47865, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/work/fsh-generated/resources/StructureDefinition-EHDSStructuredData.json: line 1, col 26842, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/work/fsh-generated/resources/StructureDefinition-EHDSStructuredData.json: line 1, col 27277, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/work/fsh-generated/resources/StructureDefinition-EHDSStructuredData.json: line 1, col 28211, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/work/fsh-generated/resources/StructureDefinition-EHDSStructuredData.json: line 1, col 29402, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/work/fsh-generated/resources/StructureDefinition-EHDSStructuredData.json: line 1, col 29764, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+/work/fsh-generated/resources/StructureDefinition-EHDSStructuredData.json: line 1, col 30495, Warning - A code with no system has no defined meaning, and it cannot be validated. A system should be provided (CODEINVALID)
+
+err = 0, warn = 12, info = 15
+IG Publisher Version: 2.0.13

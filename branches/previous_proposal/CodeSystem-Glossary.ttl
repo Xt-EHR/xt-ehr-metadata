@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.xt-ehr.eu/specifications/fhir/CodeSystem/Glossary> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Glossary"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem Glossary</b></p><a name=\"Glossary\"> </a><a name=\"hcGlossary\"> </a><a name=\"Glossary-en-US\"> </a><p>This  code system <code>https://www.xt-ehr.eu/specifications/fhir/CodeSystem/Glossary</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">A.1.6.1<a name=\"Glossary-A.461.466.461\"> </a></td><td>Document Author</td><td>The author of a document or data set</td></tr><tr><td style=\"white-space:nowrap\">A.1.6.2<a name=\"Glossary-A.461.466.462\"> </a></td><td>Auhtor Date</td><td>The date the document or data set was authored</td></tr><tr><td style=\"white-space:nowrap\">A.1.9.12<a name=\"Glossary-A.461.469.4612\"> </a></td><td>Language</td><td>The language of the document or data set</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://www.xt-ehr.eu/specifications/fhir/CodeSystem/Glossary"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "Glossary"] ; # 
+  fhir:title [ fhir:v "Glossary"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-03-19T11:20:54+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Xt-EHR"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Xt-EHR" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://Xt-EHR.eu" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Glossary of terms"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "A.1.6.1" ] ;
+     fhir:display [ fhir:v "Document Author" ] ;
+     fhir:definition [ fhir:v "The author of a document or data set" ]
+  ] [
+     fhir:code [ fhir:v "A.1.6.2" ] ;
+     fhir:display [ fhir:v "Auhtor Date" ] ;
+     fhir:definition [ fhir:v "The date the document or data set was authored" ]
+  ] [
+     fhir:code [ fhir:v "A.1.9.12" ] ;
+     fhir:display [ fhir:v "Language" ] ;
+     fhir:definition [ fhir:v "The language of the document or data set" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

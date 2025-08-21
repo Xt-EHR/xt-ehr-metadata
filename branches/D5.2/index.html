@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Home - Xt-EHR Metadata Standards v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/xt-ehr.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.xt-ehr.eu/">
+            <img height="61" alt="Project home" src="assets/images/xt-ehr-logo-transp.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Xt-EHR Metadata Standards</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Framework
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="metadata_model.html">Metadata model</a>
+      </li>
+      <li>
+        <a href="index.html">Setup</a>
+      </li>
+      <li>
+        <a href="process.html">Process</a>
+      </li>
+      <li>
+        <a href="versioning.html">Versioning</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Semantics
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="glossary.html">Glossary</a>
+      </li>
+      <li>
+        <a href="modelling.html">Logical models</a>
+      </li>
+      <li>
+        <a href="profiling.html">FHIR profiling</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformity
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="conformity.html">Conformity Framework</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Xt-EHR Metadata Standards, published by Xt-EHR. This guide is not an authorized publication; it is the continuous build for version 0.1.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/Xt-EHR/xt-ehr-metadata/tree/D5.2'>https://github.com/Xt-EHR/xt-ehr-metadata/tree/D5.2</a> and changes regularly. See the <a href='https://www.xt-ehr.eu/specifications/fhir/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--PlainLangHeader--><div id="plain-lang-box">Plain Language Summary goes here</div><script src="https://hl7.org/fhir/plain-lang.js"></script><script type="application/javascript" src="https://hl7.org/fhir/history-cm.js"> </script><script>showPlainLanguage('hl7.eu.fhir.xt-ehr.metadata', '0.1.0', 'a517240c-2d6b-4525-9d3c-db555d2b7120');</script><!--EndPlainLangHeader-->
+  <h2>Home</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://www.xt-ehr.eu/specifications/fhir/ImplementationGuide/hl7.eu.fhir.xt-ehr.metadata<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://www.xt-ehr.eu/specifications/fhir/ImplementationGuide/hl7.eu.fhir.xt-ehr.metadata"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://www.xt-ehr.eu/specifications/fhir/ImplementationGuide/hl7.eu.fhir.xt-ehr.metadata|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2025-08-19
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">XtEHRMetadata</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#setup" id="markdown-toc-setup">Setup</a></li>
+  <li><a href="#governance-and-usage" id="markdown-toc-governance-and-usage">Governance and usage</a></li>
+</ul>
+
+</div>
+<p>This is the specification for the Xt-EHR Metadata foundation. The Metadata foundation is justified and described in the project deliverable T5.4, and it is detailed in this specification.</p>
+
+<p>The metadata foundation describes how data elements are defined, and defines some of the common data data elements.</p>
+
+<ul>
+  <li>The foundation describes, for example, the metadata foundation describes that each data element SHALL be uniquely identifiable, have a definition, and data structures and terminologies must have a status and an owner.</li>
+  <li>The common data definitions - including <strong>document metadata</strong> such as author, date, patient, etc. are captured using this same framework - in the "Commons" specification. This is where the common elements are defined.</li>
+</ul>
+
+<p>This approach is to be used by the different specifications within the project, and can also be used as guidance in other specifications implementing the EEHRxF.</p>
+
+<h3 id="setup">Setup</h3>
+
+<p>This specification provides common metadata and supports the other specifications. It is intended to be used as a dependency of any technical specification captured as a FHIR Implementation Guide. 
+The infrastructure put in place for this purpose is that any Implementation Guide (started from a specification "boilerplate" ) depends on this foundation.</p>
+
+<figure>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="CLASS" height="352px" preserveAspectRatio="none" style="width:866px;height:352px;background:#FFFFFF;" version="1.1" viewBox="0 0 866 352" width="866px" zoomAndPan="magnify"><defs /><g><!--class Base--><g class="entity" data-entity="Base" data-source-line="29" data-uid="ent0002" id="entity_Base"><rect fill="#F0F8FF" height="74.8906" rx="2.5" ry="2.5" style="stroke:#303070;stroke-width:0.5;" width="271.2188" x="276" y="270.5659" /><rect fill="#40E0D0" height="26.2969" rx="2.5" ry="2.5" style="stroke:#40E0D0;stroke-width:0.5;" width="271.2188" x="276" y="270.5659" /><rect fill="#40E0D0" height="2.5" style="stroke:#40E0D0;stroke-width:0.5;" width="271.2188" x="276" y="294.3628" /><rect fill="none" height="74.8906" rx="2.5" ry="2.5" style="stroke:#303070;stroke-width:0.5;" width="271.2188" x="276" y="270.5659" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="89.6602" x="366.7793" y="288.561">Foundation</text><line style="stroke:#303070;stroke-width:0.5;" x1="277" x2="546.2188" y1="296.8628" y2="296.8628" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="210.6357" x="282" y="313.8579">Metadata, common processes</text><line style="stroke:#303070;stroke-width:1;" x1="277" x2="546.2188" y1="321.1597" y2="321.1597" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="259.2188" x="282" y="338.1548">Serves as a "guidance" and checklist</text></g><!--class CE--><g class="entity" data-entity="CE" data-source-line="36" data-uid="ent0003" id="entity_CE"><rect fill="#F0F8FF" height="140.0781" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="175.4678" x="324" y="53.5659" /><rect fill="#87CEEB" height="26.2969" rx="2.5" ry="2.5" style="stroke:#87CEEB;stroke-width:0.5;" width="175.4678" x="324" y="53.5659" /><rect fill="#87CEEB" height="2.5" style="stroke:#87CEEB;stroke-width:0.5;" width="175.4678" x="324" y="77.3628" /><rect fill="none" height="140.0781" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="175.4678" x="324" y="53.5659" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="76.9863" x="373.2407" y="71.561">Commons</text><line style="stroke:#505090;stroke-width:0.5;" x1="325" x2="498.4678" y1="79.8628" y2="79.8628" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139.6104" x="330" y="96.8579">Common content to</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131.9746" x="330" y="113.1548">be used across IGs</text><line style="stroke:#505090;stroke-width:1;" x1="325" x2="498.4678" y1="120.4565" y2="120.4565" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="118.3916" x="330" y="137.4517">Common models</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="140.6973" x="330" y="153.7485">Common definitions</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163.4678" x="330" y="170.0454">Common terminologies</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119.3281" x="330" y="186.3423">Common profiles</text></g><!--class E--><g class="entity" data-entity="E" data-source-line="47" data-uid="ent0004" id="entity_E"><rect fill="#F0F8FF" height="66.8906" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="156.8467" x="7" y="90.0659" /><rect fill="#87CEEB" height="26.2969" rx="2.5" ry="2.5" style="stroke:#87CEEB;stroke-width:0.5;" width="156.8467" x="7" y="90.0659" /><rect fill="#87CEEB" height="2.5" style="stroke:#87CEEB;stroke-width:0.5;" width="156.8467" x="7" y="113.8628" /><rect fill="none" height="66.8906" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="156.8467" x="7" y="90.0659" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="86.7412" x="42.0527" y="108.061">Boilerplate</text><line style="stroke:#505090;stroke-width:0.5;" x1="8" x2="162.8467" y1="116.3628" y2="116.3628" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="136.4932" x="13" y="133.3579">Empty template for</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="144.8467" x="13" y="149.6548">creating repositories</text></g><!--class IG--><g class="entity" data-entity="IG" data-source-line="53" data-uid="ent0005" id="entity_IG"><rect fill="#F0F8FF" height="83.1875" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="224.75" x="635" y="82.0659" /><rect fill="#87CEEB" height="26.2969" rx="2.5" ry="2.5" style="stroke:#87CEEB;stroke-width:0.5;" width="224.75" x="635" y="82.0659" /><rect fill="#87CEEB" height="2.5" style="stroke:#87CEEB;stroke-width:0.5;" width="224.75" x="635" y="105.8628" /><rect fill="none" height="83.1875" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="224.75" x="635" y="82.0659" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="218.75" x="638" y="100.061">(Any) ImplementationGuide</text><line style="stroke:#505090;stroke-width:0.5;" x1="636" x2="858.75" y1="108.3628" y2="108.3628" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92.0459" x="641" y="125.3579">For example:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83.1523" x="641" y="141.6548">Prescription</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="25.2656" x="641" y="157.9517">Lab</text></g><!--link E to CE--><g class="link" data-entity-1="E" data-entity-2="CE" data-source-line="74" data-uid="lnk6" id="link_E_CE"><path codeLine="74" d="M164.42,123.5659 C212.56,123.5659 268.19,123.5659 317.85,123.5659" fill="none" id="E-to-CE" style="stroke:#181818;stroke-width:1;stroke-dasharray:7.0,7.0;" /><polygon fill="#181818" points="323.85,123.5659,314.85,119.5659,318.85,123.5659,314.85,127.5659,323.85,123.5659" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="74.166" x="194.897" y="116.6328">Cloned into</text></g><!--link E to IG--><g class="link" data-entity-1="E" data-entity-2="IG" data-source-line="79" data-uid="lnk7" id="link_E_IG"><path codeLine="79" d="M164.22,95.3259 C245.8,66.0659 361.5,24.5659 361.5,24.5659 C361.5,24.5659 437.5,24.5659 437.5,24.5659 C437.5,24.5659 540.3544,57.4105 628.9944,85.7205" fill="none" id="E-to-IG" style="stroke:#181818;stroke-width:1;stroke-dasharray:7.0,7.0;" /><polygon fill="#181818" points="634.71,87.5459,627.3536,80.9974,629.947,86.0247,624.9197,88.6181,634.71,87.5459" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="74.166" x="362.5" y="19.6328">Cloned into</text></g><!--link E to Base--><g class="link" data-entity-1="E" data-entity-2="Base" data-source-line="80" data-uid="lnk8" id="link_E_Base"><path codeLine="80" d="M143.78,157.1959 C200.65,189.0259 281.7646,234.4349 340.9246,267.5549" fill="none" id="E-to-Base" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="346.16,270.4859,340.2609,262.5992,341.7972,268.0434,336.3529,269.5797,346.16,270.4859" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="74.2358" x="288.5" y="236.6328">dependsOn</text></g><!--link CE to Base--><g class="link" data-entity-1="CE" data-entity-2="Base" data-source-line="81" data-uid="lnk9" id="link_CE_Base"><path codeLine="81" d="M411.5,193.8259 C411.5,219.8359 411.5,242.3859 411.5,264.3159" fill="none" id="CE-to-Base" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="411.5,270.3159,415.5,261.3159,411.5,265.3159,407.5,261.3159,411.5,270.3159" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="74.2358" x="412.5" y="236.6328">dependsOn</text></g><!--link IG to Base--><g class="link" data-entity-1="IG" data-entity-2="Base" data-source-line="82" data-uid="lnk10" id="link_IG_Base"><path codeLine="82" d="M672.93,165.0659 C614.83,196.6259 540.1528,237.1927 484.0028,267.6827" fill="none" id="IG-to-Base" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="478.73,270.5459,488.548,269.7663,483.124,268.1599,484.7304,262.736,478.73,270.5459" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="74.2358" x="560.5" y="236.6328">dependsOn</text></g><!--reverse link CE to IG--><g class="link" data-entity-1="CE" data-entity-2="IG" data-source-line="86" data-uid="lnk11" id="link_CE_IG"><path codeLine="86" d="M505.34,123.5659 C546.76,123.5659 590.66,123.5659 634.83,123.5659" fill="none" id="CE-backto-IG" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="499.34,123.5659,508.34,127.5659,504.34,123.5659,508.34,119.5659,499.34,123.5659" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="74.2358" x="521.6323" y="116.6328">dependsOn</text></g></g></svg>
+</figure>
+
+<p>This framework doesn't define a new approach, it rather leverages existing standards and provides them as a ready-to-use framework.<br />
+The justification for this approach is provided in the project deliverables, and can be summarised briefly:</p>
+<blockquote>
+  <p>In order to assess gaps and conformance, and ensure long-lived, manageable specifications across countries, for different purposes, data elements (metadata) need to be represented and described (metadata) in a consistent, machine-readable, standards-based approach.</p>
+</blockquote>
+
+<p><br /><br /></p>
+
+<h3 id="governance-and-usage">Governance and usage</h3>
+
+<p>The metadata framework is built across different work packages (especially the Commons) as they are building data definitions and have expectations on metadata. As these expectations appear, they are taken by the metadata package, and when a solution is agreed, the result is captured in this specification, so that it can be automatically used by any of the packages.</p>
+
+<p>This Implementation Guide is a work result. Many people have contributed with knowledge, revisions, checking, editing. Most of the work observable in the implementation guide is a result of lengthy discussions, which have happened in different work packages.</p>
+
+<p><br /><br /></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://Xt-EHR.eu">Xt-EHR</a>.  Package hl7.eu.fhir.xt-ehr.metadata#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Aug 19, 2025 17:11+0000">2025-08-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div id="container" style="color: #ffffff; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+  <div>
+    Links: 
+    <a style="color: #ffffff" href="toc.html">Table of Contents</a> |
+    <a style="color: #ffffff" href="qa.html">QA Report</a>
+    <a style="color: #ffffff" rel="license" href="http://hl7.org/fhir/R5/license.html">
+      <img style="border-style: none;" alt="CC0" src="cc0.png"/>
+    </a><br/>
+    The Xt-EHR action is co-funded by the European Union, EU4Health Program 2021-2027, under Grant Agreement Nr.º 101128085.
+  </div>
+  <div>
+    <img height="41" alt="a EU funded project" src="assets/images/eu.png"/>
+  </div>
+</div>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

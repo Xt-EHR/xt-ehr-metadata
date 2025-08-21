@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Logical models - Xt-EHR Metadata Standards v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/xt-ehr.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4.1"}
+    h3,h4,h5,h6{--heading-prefix:"4.1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.xt-ehr.eu/">
+            <img height="61" alt="Project home" src="assets/images/xt-ehr-logo-transp.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Xt-EHR Metadata Standards</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Framework
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="metadata_model.html">Metadata model</a>
+      </li>
+      <li>
+        <a href="index.html">Setup</a>
+      </li>
+      <li>
+        <a href="process.html">Process</a>
+      </li>
+      <li>
+        <a href="versioning.html">Versioning</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Semantics
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="glossary.html">Glossary</a>
+      </li>
+      <li>
+        <a href="modelling.html">Logical models</a>
+      </li>
+      <li>
+        <a href="profiling.html">FHIR profiling</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformity
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="conformity.html">Conformity Framework</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='using.html'><b>Using the Metadata Framework</b></a></li><li><b>Logical models</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Xt-EHR Metadata Standards, published by Xt-EHR. This guide is not an authorized publication; it is the continuous build for version 0.1.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/Xt-EHR/xt-ehr-metadata/tree/32/merge'>https://github.com/Xt-EHR/xt-ehr-metadata/tree/32/merge</a> and changes regularly. See the <a href='https://www.xt-ehr.eu/specifications/fhir/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Logical models</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#information-models" id="markdown-toc-information-models">Information models</a></li>
+  <li><a href="#ehn-guidelines-datasets" id="markdown-toc-ehn-guidelines-datasets">eHN Guidelines Datasets</a></li>
+</ul>
+
+</div>
+<h3 id="information-models">Information models</h3>
+
+<p>Information models (or logical data models) provide a technology-agnostic view on data. Information models are easier to process/validate for clinical experts and they can be implemented using different data exchange/storage standards.</p>
+
+<p>The information models approach used by Xt-EHR for EHDS follows ISO 13972 "Health informatics — Clinical information models — Characteristics, structures and requirements."</p>
+
+<p>Granularity of an information model can be different across use cases. A base information for medication would provide an optimal model for complete description of a medication in clinical context. A more granular model could be used on a regulatory or registry level, but not all this data may be relevant for eHealth users. On a national level, medication information may often be just a code or a reference, and that too may be sufficient in that context. Therefore, EHDS models may not be directly implementable - every specification/implementation is free to extend or reduce these models to make them fit for their exact use case. However, it is expected that derived models do not conflict with the source model.</p>
+
+<p>Common data models for the Xt-EHR specifications are published in <a href="https://build.fhir.org/ig/Xt-EHR/xt-ehr-common/artifacts.html">Xt-EHR Information Models repository</a>.</p>
+
+<h4 id="publishing-format">Publishing format</h4>
+
+<p>Xt-EHR Information models are published as <a href="http://hl7.org/fhir/logical.html">FHIR Logical Models</a>. While they may be represented similarly to the technical FHIR profiles, they remain representations of abstract data structures - simply captured as a technical artifact (a FHIR StructureDefinition) instead of a spreadsheet or document.
+These models are different and separate artifacts from the profiles. For example, logical model for Patient would not be a profile on FHIR Patient resource, but a completely independent StructureDefinition. It is possible to establish relationships between those. For exammple a model for "Prescription" is defined independently of any resource or any FHIR release, but it may me mapped to its FHIR implementation as a MedicationRequest in FHIR R4 or FHIR R5, as it may be mapped to a CDA document for ePrescription.</p>
+
+<p>FHIR Implementation Guide for publishing information models is based on current FHIR R5 release, but this does not imply that the actual implementations would have to use the same FHIR version or FHIR.</p>
+
+<h4 id="information-model-mapping-to-implementable-specifications">Information model mapping to implementable specifications</h4>
+
+<p>The metadata framework allows for mappings between information models and FHIR resources/profiles. This mapping should consider convenience of authoring and readability for the different authors. FHIR provides several mechanisms for this - namely element mapping and ConceptMaps.</p>
+
+<h4 id="data-types">Data types</h4>
+<p>There is an agreement that the default data types to use with FHIR logical models are FHIR data types. While these data types are physically constrained and dependent of a FHIR release, in the logical models they are used with a representative intent, and not impose on the physical format. 
+For example, "dateTime" implies a specific format in FHIR resources, but in a logical model it is convened that these constraints may not apply in all cases, and some dateTime elements could have a different physical format. In other words, the logical models do not impose any physical constraints by default.</p>
+
+<p>Comparison of different data types standards.
+Complete mappings between the chosen approach and FHIR data types.</p>
+
+<h4 id="terminology-bindings">Terminology bindings</h4>
+
+<p>eHN Guidelines indicate preferred code systems for data elements, but not concrete value sets. MyHealth@EU specifications contain specific value sets for crossborder services. These value sets which are agreed and maintained by member states. However, creating and maintaining those value sets is an ongoing and time-consuming task even on crossborder level. It is probably not possible to agree on value sets on EHR level, because a large variety of different terminologies are used on a national or EHR level.</p>
+
+<p>Recommendations provided in eHN guidelines will be communicated as terminology bindings but not as value sets but as narratives and with a terminology binding level "preferred".</p>
+
+<p>In cases where terminology binding is required on a data exchange standard level, that binding applies according to which standard (CDA, FHIR) is used, and the code system does not have to be provided in the information model.</p>
+
+<h4 id="naming-and-authoring-conventions">Naming and authoring conventions</h4>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>name</strong></td>
+      <td>EHDSModelName - CamelCase name with prefix "EHDS". The name part may but does not necessarily follow the resource names in FHIR.</td>
+    </tr>
+    <tr>
+      <td><strong>title</strong></td>
+      <td>Model Name (model) - "(model)" is added to make sure information models are easily distinguishable from FHIR profiles, which may have the same or similar titles. If model is created for a specific use case, an agreed additional sufix or prefix is added.</td>
+    </tr>
+    <tr>
+      <td><strong>description</strong></td>
+      <td>Short description of the model. Significant limitations or considerations can be provided.</td>
+    </tr>
+    <tr>
+      <td><strong>characteristics</strong></td>
+      <td>#can-be-target - using this code ensures, that this model can be referenced from another models</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ehn-guidelines-datasets">eHN Guidelines Datasets</h3>
+
+<p>All <a href="https://health.ec.europa.eu/ehealth-digital-health-and-care/eu-cooperation/ehealth-network_en#ehealth-network-guidelines">eHN Guidelines</a> have a list of data elements required/proposed for the particular use case.</p>
+
+<p>In early 2024, eHN Subgroup of Semantics created a task force to analyse the consistency of guidelines, including the data sets and common data objects across different guidelines.</p>
+
+<p>The task force concluded that the same data is often modelled/described differently in different guidelines, and proposed harmonisation of data elements and their description (see <a href="https://docs.google.com/spreadsheets/d/1JGA4xk68xdCC8qOQlu4SXiMYFftoT_fJAENBIZK1bis/edit?gid=1521819365#gid=1521819365">the results</a>).</p>
+
+<p>eHN Guidelines datasets cannot be transformed into computable logical models directly for the following reasons:</p>
+<ul>
+  <li>granularity of modelling is insufficient (subelements might be mentioned in the textual description);</li>
+  <li>cardinality is not provided (0..* or 1..1 cardinalities have a clear impact for implementation);</li>
+  <li>data types are not provided (often, they can be guessed, but not always).</li>
+</ul>
+
+<p>In previous projects (e.g. XpanDH) eHN Guidelines datasets have been published as FHIR logical models. For EHDS information models, consolidated models are created following the recommendations by eHN Subgroup of Semantics consistency task force.</p>
+
+<p>This means that some models might not fully match the data sets in published guidelines.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://Xt-EHR.eu">Xt-EHR</a>.  Package hl7.eu.fhir.xt-ehr.metadata#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Sat, Aug 9, 2025 16:12+0000">2025-08-09</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div id="container" style="color: #ffffff; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+  <div>
+    Links: 
+    <a style="color: #ffffff" href="toc.html">Table of Contents</a> |
+    <a style="color: #ffffff" href="qa.html">QA Report</a>
+    <a style="color: #ffffff" rel="license" href="http://hl7.org/fhir/R5/license.html">
+      <img style="border-style: none;" alt="CC0" src="cc0.png"/>
+    </a><br/>
+    The Xt-EHR action is co-funded by the European Union, EU4Health Program 2021-2027, under Grant Agreement Nr.º 101128085.
+  </div>
+  <div>
+    <img height="41" alt="a EU funded project" src="assets/images/eu.png"/>
+  </div>
+</div>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

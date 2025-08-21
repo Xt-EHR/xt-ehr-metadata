@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Governance - Xt-EHR v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/xt-ehr.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.xt-ehr.eu/">
+            <img height="61" alt="Project home" src="assets/images/xt-ehr-logo-transp.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Xt-EHR</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Framework
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Setup</a>
+      </li>
+      <li>
+        <a href="process.html">Process</a>
+      </li>
+      <li>
+        <a href="versioning.html">Versioning</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Semantics
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="glossary.html">Glossary</a>
+      </li>
+      <li>
+        <a href="modelling.html">Logical models</a>
+      </li>
+      <li>
+        <a href="profiling.html">FHIR profiling</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Governance</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Xt-EHR, published by Xt-EHR. This guide is not an authorized publication; it is the continuous build for version 0.1.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/Xt-EHR/xt-ehr-metadata/tree/wip">https://github.com/Xt-EHR/xt-ehr-metadata/tree/wip</a> and changes regularly. See the <a href="https://www.xt-ehr.eu/specifications/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Governance</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h1 id="governance-of-artifact-repositories-during-and-after-the-project">Governance of Artifact repositories during and after the project</h1>
+
+<h2 id="governance-requirements">Governance Requirements:</h2>
+
+<ol>
+  <li>
+    <p>Allow continuous collaboration during the project</p>
+  </li>
+  <li>
+    <p>Achieve implementable, testable technical specifications</p>
+  </li>
+  <li>Allow contribution and cross-content creation between technical specifications and the official deliverable documents
+    <ol>
+      <li>Easy to read excerpts of technical specifications</li>
+      <li>Ability to "freeze" content for deliverables</li>
+    </ol>
+  </li>
+  <li>
+    <p>Support post-project continuity</p>
+  </li>
+  <li>
+    <p>Based on and aligned with existing standards</p>
+  </li>
+  <li>
+    <p>Using common tooling and ecosystem as much as possible</p>
+  </li>
+  <li>
+    <p>Common metadata structure to support common needs like access control, audits, etc.</p>
+  </li>
+  <li>
+    <p>Using open repositories</p>
+  </li>
+  <li>
+    <p>Support documentation and traceability of the business context and requirements behind technical specifications</p>
+  </li>
+  <li>
+    <p>Consistent work across work packages</p>
+  </li>
+  <li>Technical specifications should be supportive of adoption and adaptation by member states
+    <ol>
+      <li>Supporting appending local processes and artifacts (constraints, extensions, terminologies)</li>
+      <li>Support adoption at national scale and adapting to national rules</li>
+      <li>Support adoption and adaptation by software vendors at member states</li>
+    </ol>
+  </li>
+  <li>
+    <p>Open collaboration</p>
+  </li>
+  <li>
+    <p>Open IP properties</p>
+  </li>
+  <li>Naming Conventions for artifacts, packages and urls
+and for elements</li>
+</ol>
+
+<ul>
+  <li>Elements in data models should not contain the parent name, unless the name needs that for disambiguation
+    <ul>
+      <li>For example: <code class="language-plaintext highlighter-rouge">Patient</code> should not contain an element called <code class="language-plaintext highlighter-rouge">patientName</code> but <code class="language-plaintext highlighter-rouge">name</code>; on the other hand, <code class="language-plaintext highlighter-rouge">Observation</code> may contain <code class="language-plaintext highlighter-rouge">observationDate</code> if this disambiguates from another element like <code class="language-plaintext highlighter-rouge">reportedDate</code>.</li>
+    </ul>
+  </li>
+</ul>
+
+<ol>
+  <li>Issue management
+    <ul>
+      <li>For every change, there should be an issue registered
+        <ul>
+          <li>Issues resulting in changes should be decided in meetings</li>
+          <li>Issues that are simple and obvious changes can be preapplied</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<figure>
+  <?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="305px" preserveAspectRatio="none" style="width:851px;height:305px;background:#FFFFFF;" version="1.1" viewBox="0 0 851 305" width="851px" zoomAndPan="magnify"><defs /><g><!--class Base--><g id="elem_Base"><rect codeLine="28" fill="#F0F8FF" height="74.8906" id="Base" rx="2.5" ry="2.5" style="stroke:#303070;stroke-width:0.5;" width="264" x="436" y="224" /><rect fill="#40E0D0" height="26.2969" rx="2.5" ry="2.5" style="stroke:#40E0D0;stroke-width:0.5;" width="264" x="436" y="224" /><rect fill="#40E0D0" height="2.5" style="stroke:#40E0D0;stroke-width:0.5;" width="264" x="436" y="247.7969" /><rect codeLine="28" fill="none" height="74.8906" id="Base" rx="2.5" ry="2.5" style="stroke:#303070;stroke-width:0.5;" width="264" x="436" y="224" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="88" x="524" y="241.9951">Foundation</text><line style="stroke:#303070;stroke-width:0.5;" x1="437" x2="699" y1="250.2969" y2="250.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="210" x="442" y="267.292">Metadata, common processes</text><line style="stroke:#303070;stroke-width:1.0;" x1="437" x2="699" y1="274.5938" y2="274.5938" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="252" x="442" y="291.5889">Serves as a "guidance" and checklist</text></g><!--class CE--><g id="elem_CE"><rect codeLine="35" fill="#F0F8FF" height="140.0781" id="CE" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="173" x="317.5" y="7" /><rect fill="#87CEEB" height="26.2969" rx="2.5" ry="2.5" style="stroke:#87CEEB;stroke-width:0.5;" width="173" x="317.5" y="7" /><rect fill="#87CEEB" height="2.5" style="stroke:#87CEEB;stroke-width:0.5;" width="173" x="317.5" y="30.7969" /><rect codeLine="35" fill="none" height="140.0781" id="CE" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="173" x="317.5" y="7" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="78" x="365" y="24.9951">Commons</text><line style="stroke:#505090;stroke-width:0.5;" x1="318.5" x2="489.5" y1="33.2969" y2="33.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139" x="323.5" y="50.292">Common content to</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="323.5" y="66.5889">be used across IGs</text><line style="stroke:#505090;stroke-width:1.0;" x1="318.5" x2="489.5" y1="73.8906" y2="73.8906" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="118" x="323.5" y="90.8857">Common models</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="138" x="323.5" y="107.1826">Common definitions</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="323.5" y="123.4795">Common terminologies</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="323.5" y="139.7764">Common profiles</text></g><!--class E--><g id="elem_E"><rect codeLine="46" fill="#F0F8FF" height="74.8906" id="E" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="154" x="7" y="39.5" /><rect fill="#87CEEB" height="26.2969" rx="2.5" ry="2.5" style="stroke:#87CEEB;stroke-width:0.5;" width="154" x="7" y="39.5" /><rect fill="#87CEEB" height="2.5" style="stroke:#87CEEB;stroke-width:0.5;" width="154" x="7" y="63.2969" /><rect codeLine="46" fill="none" height="74.8906" id="E" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="154" x="7" y="39.5" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="48" x="60" y="57.4951">Empty</text><line style="stroke:#505090;stroke-width:0.5;" x1="8" x2="160" y1="65.7969" y2="65.7969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="130" x="13" y="82.792">Empty template for</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="142" x="13" y="99.0889">creating repositories</text><line style="stroke:#505090;stroke-width:0.5;" x1="8" x2="160" y1="106.3906" y2="106.3906" /></g><!--class IG--><g id="elem_IG"><rect codeLine="52" fill="#F0F8FF" height="91.1875" id="IG" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="220" x="624" y="31.5" /><rect fill="#87CEEB" height="26.2969" rx="2.5" ry="2.5" style="stroke:#87CEEB;stroke-width:0.5;" width="220" x="624" y="31.5" /><rect fill="#87CEEB" height="2.5" style="stroke:#87CEEB;stroke-width:0.5;" width="220" x="624" y="55.2969" /><rect codeLine="52" fill="none" height="91.1875" id="IG" rx="2.5" ry="2.5" style="stroke:#505090;stroke-width:0.5;" width="220" x="624" y="31.5" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="214" x="627" y="49.4951">(Any) ImplementationGuide</text><line style="stroke:#505090;stroke-width:0.5;" x1="625" x2="843" y1="57.7969" y2="57.7969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89" x="630" y="74.792">For example:</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82" x="630" y="91.0889">Prescription</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="24" x="630" y="107.3857">Lab</text><line style="stroke:#505090;stroke-width:0.5;" x1="625" x2="843" y1="114.6875" y2="114.6875" /></g><!--link E to CE--><g id="link_E_CE"><path codeLine="73" d="M161.06,77 C206.56,77 264.43,77 312.27,77 " fill="none" id="E-to-CE" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;" /><polygon fill="#181818" points="317.46,77,308.46,73,312.46,77,308.46,81,317.46,77" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="72" x="191.25" y="70.0669">Cloned into</text></g><!--link CE to Base--><g id="link_CE_Base"><path codeLine="80" d="M466.24,147.26 C488.24,171.75 512.27,198.49 531.45,219.83 " fill="none" id="CE-to-Base" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="534.97,223.75,531.9225,214.3845,531.6252,220.0335,525.9761,219.7362,534.97,223.75" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="73" x="507" y="190.0669">dependsOn</text></g><!--link IG to Base--><g id="link_IG_Base"><path codeLine="81" d="M693.39,122.64 C666.29,152.44 630.95,191.29 604.7,220.15 " fill="none" id="IG-to-Base" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="601.22,223.98,610.2384,220.0216,604.5876,220.2842,604.3251,214.6334,601.22,223.98" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="73" x="642" y="190.0669">dependsOn</text></g><!--reverse link CE to IG--><g id="link_CE_IG"><path codeLine="85" d="M496,77 C535.68,77 582.41,77 623.91,77 " fill="none" id="CE-backto-IG" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="490.7,77,499.7,81,495.7,77,499.7,73,490.7,77" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="73" x="512.75" y="70.0669">dependsOn</text></g></g></svg>
+</figure>
+
+<p>https://github.com/xt-EHR</p>
+
+<h2 id="approach">Approach</h2>
+
+<ol>
+  <li>IG Building infrastructure
+    <ul>
+      <li>Repo space/org</li>
+      <li>Template</li>
+      <li>Empty IGfor anyone to clone</li>
+      <li></li>
+    </ul>
+  </li>
+  <li>Logical models 
+ 1.1. one IG per package for logical models
+ 1.2. one IG for common models</li>
+  <li>technical specifications</li>
+  <li>
+    <p>terminology specifications</p>
+  </li>
+  <li>
+    <p>Dependencies
+Inventory of standards</p>
+  </li>
+  <li>
+    <p>Issues</p>
+  </li>
+  <li>
+    <p>Branching</p>
+  </li>
+  <li></li>
+  <li>
+    <p><strong>Creating a GitHub Organization</strong>: For the common aspects of the project, the we established a GitHub organization. This allowed us to manage and coordinate work efficiently.</p>
+  </li>
+  <li>
+    <p><strong>Hosting Technical Specifications on HL7 Europe</strong>: To ensure that the technical specifications outlive the project, we hosted them on HL7 Europe. Although these specifications were acted upon on behalf of the project, they continue to serve as a valuable reference today and can be further improved.</p>
+  </li>
+  <li><strong>Static Specifications for Version Alignment</strong>: In situations where we needed "static" specifications to ensure deliverables aligned with a specific version, we created branches. This approach provided us with the flexibility to manage different versions as needed.</li>
+</ol>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://Xt-EHR.eu">Xt-EHR</a>.  Package hl7.eu.fhir.xt-ehr.foundation#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Nov 29, 2024 12:12+0000">2024-11-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div id="container" style="color: #ffffff; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+  <div>
+    Links: 
+    <a style="color: #ffffff" href="toc.html">Table of Contents</a> |
+    <a style="color: #ffffff" href="qa.html">QA Report</a>
+    <a style="color: #ffffff" rel="license" href="http://hl7.org/fhir/R5/license.html">
+      <img style="border-style: none;" alt="CC0" src="cc0.png"/>
+    </a><br/>
+    The Xt-EHR action is co-funded by the European Union, EU4Health Program 2021-2027, under Grant Agreement Nr.º 101128085.
+  </div>
+  <div>
+    <img height="41" alt="a EU funded project" src="assets/images/eu.png"/>
+  </div>
+</div>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

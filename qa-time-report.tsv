@@ -1,0 +1,7 @@
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.xt-ehr.metadata.json	5258	-	0	0	0	0	1	0	8	77	0	0	0	0	0	0	0	1	0	0	47	71	0	0	0	2	0	1
+fsh-generated/resources/StructureDefinition-EHDSDataSet.json	8083	29	0	28	0	0	0	0	0	59	0	0	1	0	0	0	0	0	0	0	104	819	0	0	0	3	0	0
+fsh-generated/resources/StructureDefinition-EHDSDocument.json	8240	29	0	33	0	0	0	0	0	37	0	0	0	0	0	0	0	0	0	0	136	306	0	0	0	5	0	0
+fsh-generated/resources/StructureDefinition-EHDSHealthProfessional.json	4728	22	0	41	0	0	0	0	0	25	0	0	0	0	0	0	0	0	0	0	73	213	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-EHDSOrganization.json	3535	20	0	16	0	0	0	0	0	19	0	0	0	0	0	0	0	1	0	0	55	95	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-EHDSPerson.json	5291	25	0	0	1	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	71	118	0	0	0	2	0	1
