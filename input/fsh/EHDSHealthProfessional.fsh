@@ -1,7 +1,7 @@
 Logical: EHDSHealthProfessional
 Parent: EHDSPerson
 Title: "Health professional model"
-Description: """C.2 - EHDS refined base model for Health professional (HP) """
+Description: """Health professional (HP) """
 Characteristics: #can-be-target
 
 * identifier 0..* Identifier "Identifier" """An identifier of the health professional that is unique within a defined scope. Example: National health professional ID. Multiple identifiers could be provided."""
