@@ -1,5 +1,5 @@
 Logical: EHDSDocument
-Parent: EHDSStructuredData
+Parent: EHDSDataSet
 Id: EHDSDocument
 Title: "Common model for EHDS document exchange"
 Description: "Common header elements for all EHDS document exchange."
@@ -20,6 +20,7 @@ Characteristics: #can-be-target
 * documentStatus 1..1 CodeableConcept "Document status" """The status of the Hospital discharge report. E.g., preliminary, final."""
   * ^binding.description = "hl7:CompositionStatus"
   * ^binding.strength = #preferred
+
 * period 0..1 Period "Period" """Time of service that is being documented"""
 // * reportDateTime 1..1 dateTime "Report date and time" """Date and time of the report creation."""
 //replaced by issuedDateTime
@@ -45,8 +46,8 @@ Characteristics: #can-be-target
 //  * ^binding.strength = #preferred
 
 * knowledgeResources 0..* Base "Related documents and information sources"
-  * externalReference 0..* RelatedArtifact "..."
-  * relatedTo 0..* Reference "..."
+  * externalReference 0..* Reference "..."
+
 
 
 // Report?

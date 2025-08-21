@@ -45,13 +45,7 @@ skinparam class<<TM+>> {
     }
 
 
-    class "**Boilerplate**" as E<<TM>> {
-        Empty template for 
-creating repositories
-    }
-
-
-    class "**(Any) ImplementationGuide**" as IG<<TM>> {
+    class "**Implementation Guides**" as IG<<TM>> {
     For example:
     Prescription
     Lab
@@ -72,19 +66,18 @@ creating repositories
 
 
 'T  .d[hidden].> CE
-E  .r.> CE: "   Cloned into         "
+
 'E  .u.> T: "   Cloned into         "
 
 
 
-E  .r.> IG: "Cloned into"
-E -r-> Base: "dependsOn"
-CE --> Base: "dependsOn"
+
+CE -d-> Base: "dependsOn"
 IG --> Base: "dependsOn"
 'IG -u-> T: "dependsOn"
 'IG .r.> Pub : "                "
 'T -d[hidden]-> IG : "           "
-CE <-r- IG : " dependsOn     "
+CE <-r- IG : "              depends On              "
 
 
 

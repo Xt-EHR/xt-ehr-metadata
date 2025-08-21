@@ -1,5 +1,5 @@
 @startuml
-skinparam linetype ortho
+'skinparam linetype ortho
 hide circle
 hide stereotype
 hide methods
@@ -11,7 +11,7 @@ class "**EHDSDataSet**" as EHDSData {
   |_ metadata 0..*
     |_ identifier 0..*
     |_ subject 1..1   
-    |_ relatedPerson 0..* ?
+'    |_ relatedPerson 0..* ?
   '  |_ origin 0..1   
     |_ authorship 1..*   
       |_ author 1..1   
@@ -42,7 +42,7 @@ class "**EHDSDocument**" as EHDSDocument #efe {
     |_ <b>documentType 1..1
     |_ <b>eventType 0..*   
     |_ <b>documentTitle 1..1   
-    |_ documentStatus 1..1  ?
+'    |_ documentStatus 1..1  ?
     |_ <b>period 0..1   
     |_ <b>attestation 0..*   
       |_ <b>attester 1..1   
@@ -54,7 +54,7 @@ class "**EHDSDocument**" as EHDSDocument #efe {
       |_ <b>authorSpecialty 0..*   
     |_ <b>custodian 1..1   
     |_ <b>documentFormat 0..1   
-    |_ confidentiality 0..1 ? 
+'    |_ confidentiality 0..1 ? 
   |_ <b>knowledgeResources 0..*   
     |_ <b>externalReference 0..*   
     |_ <b>relatedTo 0..*   
@@ -353,7 +353,7 @@ class "**EHDSDocument**" as EHDSDocument #efe {
 '}
 
 
-EHDSData <|-r- EHDSDocument: "              Specialises                   "
+EHDSData <|-r- EHDSDocument: "       Specialises      "
 
 ''EHDSData <|-- RESTfulExchange
 ''RESTfulExchange <|-- Prescription'

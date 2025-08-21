@@ -1,5 +1,5 @@
-Logical: EHDSPatient
-Title: "Patient model"
+Logical: EHDSPerson
+Title: "Person"
 Description: """C.1 - EHDS refined base model for Patient/subject information"""
 Characteristics: #can-be-target
 
@@ -11,12 +11,14 @@ Characteristics: #can-be-target
   * ^binding.strength = #preferred
 * address 0..* ANY "C.1.5 - Address" """Mailing and home or office addresses. The addresses are always sequences of address parts (e.g. street address line, country, ZIP code, city) even if postal address formats may vary depending on the country. An address may or may not include a specific use code; if this attribute is not present it is assumed to be the default address useful for any purpose."""
 * telecom 0..* ANY "C.1.6 - Telecom" """Telecommunication contact information (addresses) associated to a person. Multiple telecommunication addresses might be provided."""
-* maritalStatus 0..1 CodeableConcept "C.1.7 - Marital status" """Marital (civil) status of a patient"""
+* maritalStatus 0..1 CodeableConcept "C.1.7 - Marital status" """Marital (civil) status of a person"""
   * ^binding.description = "HL7 marital-status"
   * ^binding.strength = #preferred
-* citizenship 0..* CodeableConcept "C.1.8 - Citizenship (nationality)" """Citizenship/nationality of the patient."""
+* citizenship 0..* CodeableConcept "C.1.8 - Citizenship (nationality)" """Citizenship/nationality of the person."""
   * ^binding.description = "ISO 3166-1-2"
   * ^binding.strength = #preferred
-* communicationLanguage 0..* CodeableConcept "C.1.9 - Communcation language" """The language which can be used to communicate with the patient about his or her health."""
+* communicationLanguage 0..* CodeableConcept "C.1.9 - Communication language" """The language which can be used to communicate with the patient about his or her health."""
   * ^binding.description = "BCP 47"
   * ^binding.strength = #preferred
+
+//* relatedPerson ???
