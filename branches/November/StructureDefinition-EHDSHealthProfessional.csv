@@ -1,0 +1,33 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"EHDSHealthProfessional","EHDSHealthProfessional","","","",0,*,"","","","null {[]} {[]}
+","Health professional model","Health professional (HP) ","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"EHDSHealthProfessional.personalIdentifier","EHDSHealthProfessional.personalIdentifier","","","",1,*,"","","","Identifier {[]} {[]}
+","Personal identifier","An identifier of the patient that is unique within a defined scope. Example: National ID (birth number) or National patient identifier for the Czech patient. Multiple identifiers could be provided. ","","","","","","","","","",,,,,"",,,,"EHDSPerson.personalIdentifier",1,*,"",""
+"EHDSHealthProfessional.name","EHDSHealthProfessional.name","","","",0,*,"","","","Base {[]} {[]}
+","Name","Name of the health professional that has been treating or taking responsibility for the patient.[the structure of the name will be the same as for the patient (given name, family name / surname)]","","","","","","","","","",,,,,"",,,,"EHDSPerson.name",0,*,"",""
+"EHDSHealthProfessional.dateOfBirth","EHDSHealthProfessional.dateOfBirth","","","",0,1,"","","","dateTime {[]} {[]}
+","Date of birth","The date of birth of the patient [ISO TS 22220]. As age of the patient might be important for correct interpretation of the test result values, complete date of birth should be provided.","","","","","","","","","",,,,,"",,,,"EHDSPerson.dateOfBirth",0,1,"",""
+"EHDSHealthProfessional.administrativeGender","EHDSHealthProfessional.administrativeGender","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Administrative gender","This field must contain a recognized valid value for ""administrative gender"". If different, ""physiological gender"" should be communicated elsewhere. ","","","","","","","","","",,"preferred","HL7 Administrative Gender","","",,,,"EHDSPerson.administrativeGender",0,1,"",""
+"EHDSHealthProfessional.address","EHDSHealthProfessional.address","","","",0,1,"","","","Base {[]} {[]}
+","Address","Mailing and home or office addresses. The addresses are always sequences of address parts (e.g. street address line, country, postcode, city) even if postal address formats may vary depending on the country. An address may or may not include a specific use code; if this attribute is not present it is assumed to be the default address useful for any purpose.","","","","","","","","","",,,,,"",,,,"EHDSPerson.address",0,*,"",""
+"EHDSHealthProfessional.telecom","EHDSHealthProfessional.telecom","","","",0,*,"","","","Base {[]} {[]}
+","Telecom","Telecommunication contact information (addresses) associated with a person, such as phone number, email, or messaging service. Multiple telecommunication addresses might be provided.","","","","","","","","","",,,,,"",,,,"EHDSPerson.telecom",0,*,"",""
+"EHDSHealthProfessional.maritalStatus","EHDSHealthProfessional.maritalStatus","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Marital status","Marital (civil) status of a person","","","","","","","","","",,"preferred","HL7 marital-status","","",,,,"EHDSPerson.maritalStatus",0,1,"",""
+"EHDSHealthProfessional.citizenship","EHDSHealthProfessional.citizenship","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Citizenship (nationality)","Citizenship/nationality of the person.","","","","","","","","","",,"preferred","ISO 3166-1-2","","",,,,"EHDSPerson.citizenship",0,*,"",""
+"EHDSHealthProfessional.communicationLanguage","EHDSHealthProfessional.communicationLanguage","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Communication language","The language which can be used to communicate with the patient about his or her health.","","","","","","","","","",,"preferred","BCP 47","","",,,,"EHDSPerson.communicationLanguage",0,*,"",""
+"EHDSHealthProfessional.identifier","EHDSHealthProfessional.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","Identifier","An identifier of the health professional that is unique within a defined scope. Example: National health professional ID. Multiple identifiers could be provided.","","","","","","","","","",,,,,"#C.2.1
+",,,,"EHDSHealthProfessional.identifier",0,*,"",""
+"EHDSHealthProfessional.role","EHDSHealthProfessional.role","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Role","Health professional role. Multiple roles could be provided.","","","","","","","","","",,"preferred","ISCO, SNOMED CT","","#C.2.5
+",,,,"EHDSHealthProfessional.role",0,*,"",""
+"EHDSHealthProfessional.organization","EHDSHealthProfessional.organization","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://www.xt-ehr.eu/specifications/fhir/StructureDefinition/EHDSOrganization]]}
+","Organization","The organization where this role is available","","","","","","","","","",,,,,"#C.2.6
+",,,,"EHDSHealthProfessional.organization",0,1,"",""
+"EHDSHealthProfessional.specialty","EHDSHealthProfessional.specialty","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Specialty","The specialty of a practitioner that describes the functional role they are practicing at a given organization","","","","","","","","","",,,,,"#C.2.7
+",,,,"EHDSHealthProfessional.specialty",0,*,"",""

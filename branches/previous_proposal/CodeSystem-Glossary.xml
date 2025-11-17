@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="Glossary"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem Glossary</b></p><a name="Glossary"> </a><a name="hcGlossary"> </a><a name="Glossary-en-US"> </a><p>This  code system <code>https://www.xt-ehr.eu/specifications/fhir/CodeSystem/Glossary</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">A.1.6.1<a name="Glossary-A.461.466.461"> </a></td><td>Document Author</td><td>The author of a document or data set</td></tr><tr><td style="white-space:nowrap">A.1.6.2<a name="Glossary-A.461.466.462"> </a></td><td>Auhtor Date</td><td>The date the document or data set was authored</td></tr><tr><td style="white-space:nowrap">A.1.9.12<a name="Glossary-A.461.469.4612"> </a></td><td>Language</td><td>The language of the document or data set</td></tr></table></div>
+  </text>
+  <url value="https://www.xt-ehr.eu/specifications/fhir/CodeSystem/Glossary"/>
+  <version value="0.1.0"/>
+  <name value="Glossary"/>
+  <title value="Glossary"/>
+  <status value="draft"/>
+  <date value="2025-03-19T11:20:54+00:00"/>
+  <publisher value="Xt-EHR"/>
+  <contact>
+    <name value="Xt-EHR"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://Xt-EHR.eu"/>
+    </telecom>
+  </contact>
+  <description value="Glossary of terms"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="A.1.6.1"/>
+    <display value="Document Author"/>
+    <definition value="The author of a document or data set"/>
+  </concept>
+  <concept>
+    <code value="A.1.6.2"/>
+    <display value="Auhtor Date"/>
+    <definition value="The date the document or data set was authored"/>
+  </concept>
+  <concept>
+    <code value="A.1.9.12"/>
+    <display value="Language"/>
+    <definition value="The language of the document or data set"/>
+  </concept>
+</CodeSystem>

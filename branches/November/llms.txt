@@ -1,0 +1,30 @@
+# hl7.eu.fhir.xt-ehr.metadata#0.1.0: Xt-EHR Metadata Standards
+
+## Pages
+
+* [Home](index.md)
+* [Using the Metadata Framework](using.md)
+* [Glossary of terms](glossary.md)
+* [Conformance and Maturity assessment](conformity.md)
+* [Versioning](versioning.md)
+* [Glossaries](glossaries.md)
+* [Artifacts Summary](artifacts.md)
+* [Logical models](modelling.md)
+* [Terminology](terminology.md)
+* [Metadata framework - requirements and specifications](metadata_model.md)
+* [Metadata process](process.md)
+* [FHIR profiling](profiling.md)
+
+## Resources
+
+### Logicals
+
+* [EHDS data exchange](StructureDefinition-EHDSDataSet.md)
+* [EHDS document](StructureDefinition-EHDSDocument.md)
+* [Health professional model](StructureDefinition-EHDSHealthProfessional.md)
+* [Organization model](StructureDefinition-EHDSOrganization.md)
+* [Person](StructureDefinition-EHDSPerson.md)
+
+### ImplementationGuides
+
+* [Xt-EHR Metadata Standards](index.md)

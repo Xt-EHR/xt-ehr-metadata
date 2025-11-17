@@ -1,0 +1,71 @@
+XtEHRMetadata : Validation Results
+=========================================
+
+err = 0, warn = 35, info = 15
+$--
+Generated $--. FHIR version $-- for hl7.eu.fhir.xt-ehr.metadata#$-- (canonical = https://www.xt-ehr.eu/specifications/fhir)
+ Build Errors : 0 / 3 / 0
+ /work/fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.xt-ehr.metadata : 0 / 0 / 16
+ /work/fsh-generated/resources/StructureDefinition-EHDSDataSet : 0 / 14 / 1
+ /work/fsh-generated/resources/StructureDefinition-EHDSDocument : 0 / 7 / 1
+ /work/fsh-generated/resources/StructureDefinition-EHDSHealthProfessional : 0 / 11 / 1
+ /work/fsh-generated/resources/StructureDefinition-EHDSOrganization : 0 / 0 / 1
+ /work/fsh-generated/resources/StructureDefinition-EHDSPerson : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-hl7.eu.fhir.xt-ehr.metadata.json ==
+INFORMATION: ImplementationGuide/hl7.eu.fhir.xt-ehr.metadata: ImplementationGuide.definition.parameter[4].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.eu.fhir.xt-ehr.metadata: ImplementationGuide.definition.parameter[5].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.eu.fhir.xt-ehr.metadata: ImplementationGuide.definition.parameter[6].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.eu.fhir.xt-ehr.metadata: ImplementationGuide.definition.parameter[7].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.eu.fhir.xt-ehr.metadata: ImplementationGuide.definition.parameter[8].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.eu.fhir.xt-ehr.metadata: ImplementationGuide.definition.parameter[9].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.eu.fhir.xt-ehr.metadata: ImplementationGuide.definition.parameter[10].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.eu.fhir.xt-ehr.metadata: ImplementationGuide.definition.parameter[11].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.eu.fhir.xt-ehr.metadata: ImplementationGuide.definition.parameter[12].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.eu.fhir.xt-ehr.metadata: ImplementationGuide.definition.parameter[13].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.eu.fhir.xt-ehr.metadata: ImplementationGuide.definition.parameter[14].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.eu.fhir.xt-ehr.metadata: ImplementationGuide.definition.parameter[15].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.eu.fhir.xt-ehr.metadata: ImplementationGuide.definition.parameter[16].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.eu.fhir.xt-ehr.metadata: ImplementationGuide.definition.parameter[17].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+INFORMATION: ImplementationGuide/hl7.eu.fhir.xt-ehr.metadata: ImplementationGuide.definition.parameter[23].code: Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
+== fsh-generated/resources/StructureDefinition-EHDSDataSet.json ==
+WARNING: StructureDefinition/EHDSDataSet: StructureDefinition.snapshot.element[4].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSDataSet: StructureDefinition.snapshot.element[9].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSDataSet: StructureDefinition.snapshot.element[11].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSDataSet: StructureDefinition.snapshot.element[12].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSDataSet: StructureDefinition.snapshot.element[16].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSDataSet: StructureDefinition.snapshot.element[18].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSDataSet: StructureDefinition.snapshot.element[19].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSDataSet: StructureDefinition.differential.element[4].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSDataSet: StructureDefinition.differential.element[6].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSDataSet: StructureDefinition.differential.element[8].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSDataSet: StructureDefinition.differential.element[9].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSDataSet: StructureDefinition.differential.element[13].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSDataSet: StructureDefinition.differential.element[15].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSDataSet: StructureDefinition.differential.element[16].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/StructureDefinition-EHDSDocument.json ==
+WARNING: StructureDefinition/EHDSDocument: StructureDefinition.snapshot.element[4].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSDocument: StructureDefinition.snapshot.element[9].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSDocument: StructureDefinition.snapshot.element[11].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSDocument: StructureDefinition.snapshot.element[12].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSDocument: StructureDefinition.snapshot.element[16].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSDocument: StructureDefinition.snapshot.element[18].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSDocument: StructureDefinition.snapshot.element[19].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/StructureDefinition-EHDSHealthProfessional.json ==
+WARNING: StructureDefinition/EHDSHealthProfessional: StructureDefinition.snapshot.element[10].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSHealthProfessional: StructureDefinition.snapshot.element[11].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSHealthProfessional: StructureDefinition.snapshot.element[12].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSHealthProfessional: StructureDefinition.snapshot.element[13].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSHealthProfessional: StructureDefinition.differential.element[1].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSHealthProfessional: StructureDefinition.differential.element[2].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSHealthProfessional: StructureDefinition.differential.element[3].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSHealthProfessional: StructureDefinition.differential.element[4].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSHealthProfessional: StructureDefinition.differential.element[5].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSHealthProfessional: StructureDefinition.differential.element[6].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: StructureDefinition/EHDSHealthProfessional: StructureDefinition.differential.element[7].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/StructureDefinition-EHDSOrganization.json ==
+== fsh-generated/resources/StructureDefinition-EHDSPerson.json ==

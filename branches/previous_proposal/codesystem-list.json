@@ -1,0 +1,12 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://www.xt-ehr.eu/specifications/fhir/CodeSystem/Glossary",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "Glossary",
+      "title" : "Glossary",
+      "description" : "Glossary of terms"
+    }
+  ]
+}

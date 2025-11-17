@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Conformance and Maturity assessment - Xt-EHR Metadata Standards v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/xt-ehr.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4.5"}
+    h3,h4,h5,h6{--heading-prefix:"4.5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.xt-ehr.eu/">
+            <img height="61" alt="Project home" src="assets/images/xt-ehr-logo-transp.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+<!--
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+-->
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Xt-EHR Metadata Standards</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Framework
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="metadata_model.html">Metadata model</a>
+      </li>
+      <li>
+        <a href="index.html">Setup</a>
+      </li>
+      <li>
+        <a href="process.html">Process</a>
+      </li>
+      <li>
+        <a href="versioning.html">Versioning</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Semantics
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="glossary.html">Glossary</a>
+      </li>
+      <li>
+        <a href="modelling.html">Logical models</a>
+      </li>
+      <li>
+        <a href="profiling.html">FHIR profiling</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformity
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="conformity.html">Conformity Framework</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='using.html'><b>Using the Metadata Framework</b></a></li><li><b>Conformance and Maturity assessment</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Xt-EHR Metadata Standards, published by Xt-EHR. This guide is not an authorized publication; it is the continuous build for version 0.1.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/Xt-EHR/xt-ehr-metadata/tree/previous_proposal">https://github.com/Xt-EHR/xt-ehr-metadata/tree/previous_proposal</a> and changes regularly. See the <a href="https://www.xt-ehr.eu/specifications/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Conformance and Maturity assessment</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<p>The metadata framework is extended to support conformity or conformance.</p>
+
+<p>Conformity or conformance is defined as …</p>
+
+<p>To enable this, the metadata framework allows capturing the required/expected as well as the actual capabilities.</p>
+
+<p>TO DO</p>
+
+<p><br />
+<br />
+<br />
+<br />
+<br /></p>
+
+<p>This framework allows conformity rules to be stated on a detailed level for data sets [Article 15, 1.1] of the priority categories [Article 14] of EHDS.</p>
+
+<h2 id="actorrole">Actor/Role</h2>
+
+<p>Actors and system roles are information systems or components of information systems that produce, manage, or act on health information (IHE). In a given specification, roles such as producer and consumer are used to group more detailed requirements and obligations for systems which act in a given role.</p>
+
+<h2 id="data-operations">Data operations</h2>
+
+<p>Operations performed on data elements. The operations have been selected from the <a href="https://build.fhir.org/ig/HL7/fhir-extensions/CodeSystem-obligation.html">HL7 Obligation codes code system</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data operation</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>able to populate</td>
+      <td>Conformant applications producing resources SHALL/SHOULD/MAY be able to correctly populate this element. Notes: Typically, this means that an application needs to demonstrate during some conformance testing process that there are some conditions under which it populates the element with a correct value. (i.e. not a data-absent-reason or equivalent.) This obligation does not impose expectations on the circumstances in which the element will be sent, only that it can be in at least some situations.</td>
+    </tr>
+    <tr>
+      <td>display</td>
+      <td>Conformant applications SHALL/SHOULD/MAY display the value of this element when presenting the data from the resource to a human user. Notes: exactly how it is displayed is not specified, but it means that a human looking at the content of the resource is made aware of the value of the element so that they can consider the meaning of the resource</td>
+    </tr>
+    <tr>
+      <td>process</td>
+      <td>Conformant applications SHALL/SHOULD/MAY consider the value of this element when processing the resource as specified by the IG. Notes: this implies that the IG that specifies this obligation provides details about what processing is to be performed, and the obligation specifially relates to the processing specified in the IG of any ElementDefinition.valueAlternatives extensions as well as the value (or other extensions explicitly declared beneath the element in the profile containing the obligation. Examples might include consideration in decision support, consideration in claims evaluation, etc.</td>
+    </tr>
+    <tr>
+      <td>persist</td>
+      <td>Conformant applications SHALL/SHOULD/MAY ensure that the value for this element is stored in a persistent data store. Notes: Exactly what the data store is not specified, nor how long it is stored for, but it is understood that the same value will be available in later exchanges.</td>
+    </tr>
+    <tr>
+      <td>explain</td>
+      <td>Documentation applicable to Conformant applications SHALL/SHOULD explain how this element is handled. Notes: this is really a rule about specifications, implying that another specification (which might be application documentation) either makes this element populate, or explains how the use cases that involve this element do not arise, or how they are handled. An example: IPA marks Patient.active must-handle and must-explain. Client applications must process Patient.active correctly if they see it, but many (though not all) specifications and/or applications ensure that Patient.active will never be false, and so it will never be populated e.g. MedMij in Netherlands prohibits use of Patient.active, and explains that it is never false.</td>
+    </tr>
+    <tr>
+      <td>no-alter</td>
+      <td>Conformant applications SHALL/SHOULD ensure that this element does not change between receiving and transfer. Notes: This does not mean that the element value cannot change, only that changing the element value for an element marked with this obligation moves an application from being an exchanger to a Consumer and a Producer, and those obligations apply.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="mapping-between-ehds-verbs-and-data-operations-hl7-obligation-concepts">Mapping between EHDS verbs and Data operations (HL7 Obligation) concepts.</h2>
+
+<blockquote>
+  <p>TODO: confirm the mappings</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>EHDS Term</th>
+      <th>EN ISO/HL7 10781​</th>
+      <th>HL7 Obligation Code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Issue, enter, insert, register​</td>
+      <td>Capture, Maintain​</td>
+      <td>able-to-populate, persist​</td>
+    </tr>
+    <tr>
+      <td>Issue, enable access​</td>
+      <td>Transmit​</td>
+      <td>send​</td>
+    </tr>
+    <tr>
+      <td>Accept, receive​</td>
+      <td>Receive​, Import</td>
+      <td>process​</td>
+    </tr>
+    <tr>
+      <td>Accept, provide access​</td>
+      <td>Render, Present​</td>
+      <td>process, display​</td>
+    </tr>
+    <tr>
+      <td>Download​</td>
+      <td>Export​</td>
+      <td>process</td>
+    </tr>
+    <tr>
+      <td>Accept (+ insert?)​</td>
+      <td>Import​</td>
+      <td>process, persist(?)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="data-elements">Data elements</h2>
+
+<p>Data element of a data set or a technical interoperability specification. The framework can be applied both
+on logical models and implementable specification level.</p>
+
+<h2 id="requirement-strength">Requirement strength</h2>
+
+<p>Reference to <a href="https://datatracker.ietf.org/doc/html/rfc2119">RFC2119</a> "Key words for use in RFCs to Indicate Requirement Levels", also referred to by HL7 FHIR <a href="https://build.fhir.org/conformance-rules.html#conflang">conformance rules</a>.
+For Xt-EHR we have opted to use the words "SHALL" and "SHOULD".</p>
+
+<ol>
+  <li><strong>SHALL</strong> …mean that the definition is an absolute requirement of the specification.</li>
+  <li><strong>SHOULD</strong> …mean that there may exist valid reasons in particular circumstances to ignore a particular item, but the full implications must be understood and carefully weighed before choosing a different course.</li>
+  <li><strong>MAY</strong> …mean that an item is truly optional. This is the default value in application of this framework.</li>
+</ol>
+
+<h2 id="rule">Rule</h2>
+
+<p>A conformity framework rule for a required level of conformity of the logical model and/or implementation specification is the combination of a data element, a data operation, and a requirement strength, e.g.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>System functional profile</th>
+      <th>Data element</th>
+      <th>Data operation</th>
+      <th>Requirement strength</th>
+      <th>Comment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Prescription function</td>
+      <td>Prescription.identifier</td>
+      <td>able to populate</td>
+      <td>SHALL</td>
+      <td>An EHR system with a prescription function SHALL be able to populate the prescription identifier.</td>
+    </tr>
+    <tr>
+      <td>…</td>
+      <td>…</td>
+      <td>…</td>
+      <td>…</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="rules-and-cardinality">Rules and cardinality</h2>
+<p>Rules specify obligations to perform certain operation. This represent a different requirement than cardinality, however there is a logical link between the two in most cases. …..</p>
+
+<blockquote>
+  <p>TODO: Find better description</p>
+</blockquote>
+
+<h2 id="ehr-system-functional-profile">EHR system functional profile</h2>
+
+<p>[from D8.1 draft]
+A functional profile gathers (at least) functional requirements (including data contents) for a set of EHR systems which have the purpose of use matching the profile. Profile sets requirements for all systems which have a certain purpose of use.</p>
+
+<p>One EHR system may fulfil several functional profiles (e.g. prescribing, outpatient management, …).</p>
+
+<p>Requirements in functional profiles are rather high level but must refer to more detailed specifications such as implementation guides (of WP6, WP7).</p>
+
+<p>Definition: functional profile: subset of comprehensive list of functional and data requirements reflecting the purpose of certain EHR systems or a specific healthcare delivery setting (EN ISO/HL7 10781:2023, adapted). Note: one system may conform to several functional profiles</p>
+
+<blockquote>
+  <p>TODO: Describe conformity levels.
+TODO: Decide how to implement conformity requirements in our deliverables.</p>
+</blockquote>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://Xt-EHR.eu">Xt-EHR</a>.  Package hl7.eu.fhir.xt-ehr.foundation#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Mar 19, 2025 11:21+0000">2025-03-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div id="container" style="color: #ffffff; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+  <div>
+    Links: 
+    <a style="color: #ffffff" href="toc.html">Table of Contents</a> |
+    <a style="color: #ffffff" href="qa.html">QA Report</a>
+    <a style="color: #ffffff" rel="license" href="http://hl7.org/fhir/R5/license.html">
+      <img style="border-style: none;" alt="CC0" src="cc0.png"/>
+    </a><br/>
+    The Xt-EHR action is co-funded by the European Union, EU4Health Program 2021-2027, under Grant Agreement Nr.º 101128085.
+  </div>
+  <div>
+    <img height="41" alt="a EU funded project" src="assets/images/eu.png"/>
+  </div>
+</div>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,46 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"EHDSStructuredData","EHDSStructuredData","","","",0,*,"","","","null {[]} {[]}
+","Resource header model","Common header elements for all structured EHDS data exchange.","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"EHDSStructuredData.metadata","EHDSStructuredData.metadata","","","",1,1,"","","","Base {[]} {[]}
+","Metadata","Metadata grouper","","","","","","","","","",,,,,"",,,,"EHDSData.metadata",1,1,"",""
+"EHDSStructuredData.metadata.identifier","EHDSStructuredData.metadata.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","Document ID","Unique identifier of the data object","","","","","","","","","",,,,,"",,,,"EHDSData.metadata.identifier",0,*,"",""
+"EHDSStructuredData.metadata.subject","EHDSStructuredData.metadata.subject","","","",1,1,"","","","https://www.xt-ehr.eu/specifications/fhir/StructureDefinition/EHDSPatient {[]} {[]}
+","Subject","Patient/subject information","","","","","","","","","",,,,,"",,,,"EHDSData.metadata.subject",1,1,"",""
+"EHDSStructuredData.metadata.authorship","EHDSStructuredData.metadata.authorship","","","",1,*,"","","","Base {[]} {[]}
+","Authorship","Document/resource authoring details","","","","","","","","","",,,,,"",,,,"EHDSData.metadata.authorship",1,*,"",""
+"EHDSStructuredData.metadata.authorship.author","EHDSStructuredData.metadata.authorship.author","","","",1,1,"","","","https://www.xt-ehr.eu/specifications/fhir/StructureDefinition/EHDSHealthProfessional {[]} {[]}
+","Author","Author by whom the resource was/were authored. Multiple authors could be provided.","","","","","","","","","",,,,,"",,,,"EHDSData.metadata.authorship.author",1,1,"",""
+"EHDSStructuredData.metadata.authorship.datetime","EHDSStructuredData.metadata.authorship.datetime","","","",1,1,"","","","dateTime {[]} {[]}
+","Date and time of authoring/issuing","Date and time of the issuing the document/resource by its author.","","","","","","","","","",,,,,"",,,,"EHDSData.metadata.authorship.datetime",1,1,"",""
+"EHDSStructuredData.metadata.lastUpdate","EHDSStructuredData.metadata.lastUpdate","","","",0,1,"","","","dateTime {[]} {[]}
+","Date and time of the last update to the resource","Date and time of the last update to the document/information","","","","","","","","","",,,,,"",,,,"EHDSData.metadata.lastUpdate",0,1,"",""
+"EHDSStructuredData.metadata.status","EHDSStructuredData.metadata.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Status of the resource","Status of the resource","","","","","","","","","",,,,,"",,,,"EHDSData.metadata.status",1,1,"",""
+"EHDSStructuredData.metadata.statusReason","EHDSStructuredData.metadata.statusReason","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Reason for the status of the resource","Reason for the status of the resource","","","","","","","","","",,,,,"",,,,"EHDSData.metadata.statusReason",0,1,"",""
+"EHDSStructuredData.metadata.version","EHDSStructuredData.metadata.version","","","",0,1,"","","","string {[]} {[]}
+","Version","Business version of the resource.","","","","","","","","","",,,,,"",,,,"EHDSData.metadata.version",0,1,"",""
+"EHDSStructuredData.metadata.language","EHDSStructuredData.metadata.language","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Language","Language in which the resource is written. Language is expressed by the IETF language tag.","","","","","","","","","",,"preferred","BCP 47","","",,,,"EHDSData.metadata.language",0,1,"",""
+"EHDSStructuredData.presentedForm","EHDSStructuredData.presentedForm","","","",0,*,"","","","https://www.xt-ehr.eu/specifications/fhir/StructureDefinition/EHDSAttachment {[]} {[]}
+","The human-readable representation of the data set","The human-readable representation of the data set","","","","","","","","","",,,,,"",,,,"EHDSData.presentedForm",0,*,"",""
+"EHDSStructuredData.subject","EHDSStructuredData.subject","","","",1,1,"","","","https://www.xt-ehr.eu/specifications/fhir/StructureDefinition/EHDSPatient {[]} {[]}
+","Subject","Patient/subject information","","","","","","","","","",,,,,"",,,,"EHDSStructuredData.subject",1,1,"",""
+"EHDSStructuredData.authorship","EHDSStructuredData.authorship","","","",1,*,"","","","Base {[]} {[]}
+","Authorship","Document/resource authoring details","","","","","","","","","",,,,,"",,,,"EHDSStructuredData.authorship",1,*,"",""
+"EHDSStructuredData.authorship.author","EHDSStructuredData.authorship.author","","","",1,1,"","","","https://www.xt-ehr.eu/specifications/fhir/StructureDefinition/EHDSHealthProfessional {[]} {[]}
+","Author","Author by whom the resource was/were authored. Multiple authors could be provided.","","","","","","","","","",,,,,"#A.1.6.1
+",,,,"EHDSStructuredData.authorship.author",1,1,"",""
+"EHDSStructuredData.authorship.datetime","EHDSStructuredData.authorship.datetime","","","",1,1,"","","","dateTime {[]} {[]}
+","Date and time of authoring/issuing","Date and time of the issuing the document/resource by its author.","","","","","","","","","",,,,,"#A.1.6.2
+",,,,"EHDSStructuredData.authorship.datetime",1,1,"",""
+"EHDSStructuredData.lastUpdate","EHDSStructuredData.lastUpdate","","","",0,1,"","","","dateTime {[]} {[]}
+","Date and time of the last update to the resource","Date and time of the last update to the document/information","","","","","","","","","",,,,,"",,,,"EHDSStructuredData.lastUpdate",0,1,"",""
+"EHDSStructuredData.status","EHDSStructuredData.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Status of the resource","Status of the resource","","","","","","","","","",,,,,"",,,,"EHDSStructuredData.status",1,1,"",""
+"EHDSStructuredData.language","EHDSStructuredData.language","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Language","Language in which the resource is written. Language is expressed by the IETF language tag.","","","","","","","","","",,"preferred","BCP 47","","#A.1.9.12
+",,,,"EHDSStructuredData.language",0,1,"",""
+"EHDSStructuredData.version","EHDSStructuredData.version","","","",0,1,"","","","string {[]} {[]}
+","Version","Business version of the resource.","","","","","","","","","",,,,,"",,,,"EHDSStructuredData.version",0,1,"",""

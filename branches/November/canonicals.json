@@ -1,0 +1,44 @@
+[
+  {
+    "id" : "hl7.eu.fhir.xt-ehr.metadata",
+    "type" : "ImplementationGuide",
+    "url" : "https://www.xt-ehr.eu/specifications/fhir/ImplementationGuide/hl7.eu.fhir.xt-ehr.metadata",
+    "version" : "0.1.0",
+    "name" : "XtEHRMetadata"
+  },
+  {
+    "id" : "EHDSDataSet",
+    "type" : "StructureDefinition",
+    "url" : "https://www.xt-ehr.eu/specifications/fhir/StructureDefinition/EHDSDataSet",
+    "version" : "0.1.0",
+    "name" : "EHDSDataSet"
+  },
+  {
+    "id" : "EHDSDocument",
+    "type" : "StructureDefinition",
+    "url" : "https://www.xt-ehr.eu/specifications/fhir/StructureDefinition/EHDSDocument",
+    "version" : "0.1.0",
+    "name" : "EHDSDocument"
+  },
+  {
+    "id" : "EHDSHealthProfessional",
+    "type" : "StructureDefinition",
+    "url" : "https://www.xt-ehr.eu/specifications/fhir/StructureDefinition/EHDSHealthProfessional",
+    "version" : "0.1.0",
+    "name" : "EHDSHealthProfessional"
+  },
+  {
+    "id" : "EHDSOrganization",
+    "type" : "StructureDefinition",
+    "url" : "https://www.xt-ehr.eu/specifications/fhir/StructureDefinition/EHDSOrganization",
+    "version" : "0.1.0",
+    "name" : "EHDSOrganization"
+  },
+  {
+    "id" : "EHDSPerson",
+    "type" : "StructureDefinition",
+    "url" : "https://www.xt-ehr.eu/specifications/fhir/StructureDefinition/EHDSPerson",
+    "version" : "0.1.0",
+    "name" : "EHDSPerson"
+  }
+]
