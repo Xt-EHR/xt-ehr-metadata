@@ -125,9 +125,13 @@ C <-d- EL:  "   mapped to   "
 LM -r- EL:  "            "  
 EL-r- VS: "             "
 VS -r- CS: "        "
-LM-d- PR: "      "
+LM <|-d- PR: "      "
+LM <|-- CDA: "                      "
 
 LM -u[hidden]- G: "      "
+
+PR -r[hidden]- CDA
+EL -d[hidden]- CDA
 
 
 glossary -d[hidden]- term
